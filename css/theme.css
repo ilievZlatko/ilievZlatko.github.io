@@ -1385,7 +1385,10 @@ textarea {
 
 .b-page-header-mod {
   margin-bottom: 75px;
-  background: url("../media/bg-pageheader-mod.jpg") no-repeat center;
+  /*background: url("../media/bg-pageheader-mod.jpg") no-repeat center;*/
+}
+.izo-durvo {
+  background: url("../media/bg-izo-durvo.jpg") no-repeat center;
 }
 .b-page-header-mod .b-hat {
   background: #fff;
