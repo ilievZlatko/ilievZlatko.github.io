@@ -2727,6 +2727,14 @@ div.b-item-card-mod:hover .b-card-buttons {
   color: #666666;
 }
 
+#width, #height {
+  width: calc(100% - 40px);
+}
+
+#calculate {
+  width: 100%;
+}
+
 .input-result {
   display: block;
   text-align: center;
