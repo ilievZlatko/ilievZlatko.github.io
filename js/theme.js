@@ -357,7 +357,10 @@
         selectProductColor: function(options) {
             $(".color-picker a").on('click', function(e){
                 e.preventDefault();
-                $(this).parent('li').toggleClass('color-selected');
+                $(".color-picker li").each(function() {
+                  $(this).removeClass('color-selected');
+                });
+                $(this).parent('li').addClass('color-selected');
             });
         },
 
