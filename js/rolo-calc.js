@@ -28,6 +28,7 @@
 
   classic.addEventListener('click', function(e) {
     e.preventDefault();
+    $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
                         <a href="javascript:void(0);">
@@ -189,11 +190,13 @@
                           <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
                         </a>
                       </li>`;
-      selectColor();
+    $('.color-picker').fadeIn('fast');
+    selectColor();
   });
 
   fantasy.addEventListener('click', function(e) {
     e.preventDefault();
+    $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
                         <a href="javascript:void(0);">
@@ -355,11 +358,13 @@
                           <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
                         </a>
                       </li>`;
+    $('.color-picker').fadeIn('fast');
     selectColor();
   });
 
   dayAndNight.addEventListener('click', function(e) {
     e.preventDefault();
+    $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
                         <a href="javascript:void(0);">
@@ -426,6 +431,7 @@
                           <img src="media/product-detail/colors/plise-13.jpg" alt="/">
                         </a>
                       </li>`;
+    $('.color-picker').fadeIn('fast');
     selectColor();
   });
 

@@ -2689,6 +2689,7 @@ div.b-item-card-mod:hover .b-card-buttons {
   -ms-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
 }
+
 .product-info .color-picker li {
   margin-right: -8px;
 }
