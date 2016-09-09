@@ -12,11 +12,11 @@
 }
 		::-moz-selection {
 background:#333636;
-color:#d8942c;
+color:#e24545;
 }
 ::selection {
 	background: #333636;
-	color: #d8942c;
+	color: #e24545;
 }
 #documenter_sidebar #documenter_logo {
 	background-image: url(../../images/image_1.png);
@@ -28,25 +28,25 @@ color:#d8942c;
 }
 
 a {
-	color: #d8942c;
+	color: #e24545;
 }
 .btn {
 	border-radius: 3px;
 }
 .btn-primary {
-	background-image: -moz-linear-gradient(top, #d8942c, #d8942c);
-	background-image: -ms-linear-gradient(top, #d8942c, #d8942c);
- background-image: -webkit-gradient(linear, 0 0, 0 28AD62%, from(#343838), to(#d8942c));
-	background-image: -webkit-linear-gradient(top, #d8942c, #d8942c);
-	background-image: -o-linear-gradient(top, #d8942c, #d8942c);
-	background-image: linear-gradient(top, #d8942c, #d8942c);
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8942c', endColorstr='#d8942c', GradientType=0);
-	border-color: #d8942c #d8942c #bfbfbf;
+	background-image: -moz-linear-gradient(top, #e24545, #e24545);
+	background-image: -ms-linear-gradient(top, #e24545, #e24545);
+ background-image: -webkit-gradient(linear, 0 0, 0 28AD62%, from(#343838), to(#e24545));
+	background-image: -webkit-linear-gradient(top, #e24545, #e24545);
+	background-image: -o-linear-gradient(top, #e24545, #e24545);
+	background-image: linear-gradient(top, #e24545, #e24545);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e24545', endColorstr='#e24545', GradientType=0);
+	border-color: #e24545 #e24545 #bfbfbf;
 	color: #FFFFFF;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	border-color: #d8942c #d8942c #bfbfbf;
-	background-color: #d8942c;
+	border-color: #e24545 #e24545 #bfbfbf;
+	background-color: #e24545;
 }
 hr {
 	border-top: 1px solid #D4D4D4;
@@ -73,12 +73,12 @@ hr {
 }
 #documenter_sidebar ul a:hover {
 	background: #333636;
-	color: #d8942c;
+	color: #e24545;
 	border-top: 1px solid #333636;
 }
 #documenter_sidebar ul a.current {
 	background: #333636;
-	color: #d8942c;
+	color: #e24545;
 	border-top: 1px solid #333636;
 }
 #documenter_copyright {

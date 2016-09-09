@@ -10,25 +10,25 @@
 
 /* Start page css */
 .demopage-color{
-	color: #d8942c !important;
+	color: #e24545 !important;
 }
 .demopage-color-hover:hover,
 .demopage-color-hover:focus{
-	color: #d8942c !important;
+	color: #e24545 !important;
 }
 .demopage-bg{
-	background-color: #d8942c !important;
+	background-color: #e24545 !important;
 }
 .demopage-bg-hover:hover,
 .demopage-bg-hover:focus{
-	background-color: #d8942c !important;
+	background-color: #e24545 !important;
 }
 .demopage-border{
-	border-color: #d8942c !important;
+	border-color: #e24545 !important;
 }
 .demopage-border-hover:hover,
 .demopage-border-hover:focus{
-	border-color: #d8942c !important;
+	border-color: #e24545 !important;
 }
 
 

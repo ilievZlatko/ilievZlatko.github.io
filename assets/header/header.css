@@ -151,7 +151,7 @@
 	color: #fff;
 }
 /*NAV BAR SCROLLING */
- 
+
 .navbar-scrolling * {
 	color: #333;
 }
@@ -194,9 +194,9 @@
 	border-bottom: 1px solid rgba(000, 000, 000, 0.15);
 }
 /*NORMAL WIDTH */
-	
-	
-	
+
+
+
 .header-normal-width .container-boxed-width {
 	width: 100%;
 	padding: 0;
@@ -517,7 +517,7 @@
 .header-menu-middle .yamm {
     margin-right: 0px !important;
     margin-top: 10px !important;
-    
+
 }
 
 .header-navibox-2-left.header-normal-width .yamm{
@@ -531,7 +531,7 @@
 
 .navbar .main-menu > li > a{
     line-height: 11px;
-    
+
 }
 
 
@@ -838,7 +838,7 @@
 /**
  * Box Model, Html & Body
  */
- 
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
 
 }
@@ -1017,7 +1017,7 @@ html [off-canvas*=open] {
 	padding: 10px 20px;
 }
 [off-canvas] li:hover a {
-    color: #d8942c;
+    color: #e24545;
 }
 /*SEARCH MODAL*/
 .header-search {
