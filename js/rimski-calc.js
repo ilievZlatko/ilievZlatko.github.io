@@ -28,17 +28,16 @@
     result.textContent = res;
     modal.style.display = "block";
     modalBody.innerHTML = `<div class="row">
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">брой щори: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${1}</div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align center">цвят: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align"><img src="${color}" alt="/"></div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">размер: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">управление: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${checkedValue}</div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>
-                             <div class="col-xs-12 col-sm-12 col-md-12 top-margin-small">
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">брой щори: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${1}</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align center">цвят: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align"><img src="${color}" alt="/"></div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">размер: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">управление: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${checkedValue}</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>   
                               <button class="btn btn-primary btn-sm">добави в количката</button>
                              </div>
                            </div>`;
