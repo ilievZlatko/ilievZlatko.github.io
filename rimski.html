@@ -676,45 +676,49 @@
 													</ul>
 												</div>
 											</div>
-											<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-												<div class="b-size">
-													<span class="small-title width-title">
-														ширина в см.
-													</span>
-													<div class="b-quantity">
-														<div class="input-group spinner" data-trigger="spinner">
-															<input id="width" type="text" data-rule="quantity" required>
-															<div class="spinner-btn">
-																<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
-																<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+
+
+											<div class="top-margin-small col-xs-12 col-sm-12 col-md-6 col-lg-6">
+												<div class="col-xs-6 col-sm-6 left-padding-zero">
+													<div class="b-size">
+														<span class="small-title left-padding-zero width-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+															ширина
+														</span>
+														<div class="b-quantity col-sm-12 col-md-12 col-lg-12">
+															<div class="input-group spinner" data-trigger="spinner">
+																<input id="width" type="text" data-rule="quantity" required>
+																<div class="spinner-btn">
+																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-xs-6 col-sm-6 left-padding-zero">
+													<div class="b-size">
+														<span class="small-title left-padding-zero width-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+															височина
+														</span>
+														<div class="b-quantity col-sm-12 col-md-12 col-lg-12">
+															<div class="input-group spinner" data-trigger="spinner">
+																<input id="height" type="text" data-rule="quantity" required>
+																<div class="spinner-btn">
+																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 
-											<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-												<div class="b-size">
-													<span class="small-title width-title">
-														височина в см.
-													</span>
-													<div class="b-quantity">
-														<div class="input-group spinner" data-trigger="spinner">
-															<input id="height" type="text" data-rule="quantity" required>
-															<div class="spinner-btn">
-																<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
-																<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-xs-12 col-sm-6 wow fadeInUp">
+											<div class="top-margin-small col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp">
 												<div class="b-check-radio-holder">
 													<form method="get" action="typography.html#">
 														<div class="form-group">
-															<span class="small-title width-title">
+															<span class="left-padding-zero col-xs-12 col-sm-12 col-md-12 col-lg-12 small-title width-title">
 																Управление на щората
 															</span>
 															<div class="checkbox checkbox-1">
@@ -732,13 +736,13 @@
 
 											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small">
 												<div class="b-add clearfix">
-													<div id="result" class="input-result" type="text"></div>
+													<button id="calculate" class="btn btn-primary btn-sm">изчисли</button>
 												</div>
 											</div>
 
 											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small">
 												<div class="b-add clearfix">
-													<button id="calculate" class="btn btn-primary btn-sm">изчисли</button>
+													<div id="result" class="input-result" type="text">резултат</div>
 												</div>
 											</div>
 
