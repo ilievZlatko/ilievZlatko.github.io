@@ -2679,6 +2679,26 @@ div.b-item-card-mod:hover .b-card-buttons {
   color: #333333;
   margin-bottom: 17px;
 }
+
+.tab-devider {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 40px;
+    background: #e24545;
+}
+
+.btn-active {
+    background: #fff;
+    border: 1px solid #e24545;
+    border-bottom: 1px solid #fff;
+    color: #e24545;
+    z-index: 2;
+}
+
 .product-info .color-picker a {
   display: block;
   padding: 2px;
@@ -2688,6 +2708,14 @@ div.b-item-card-mod:hover .b-card-buttons {
   -webkit-transition: border-color 0.3s ease-in-out;
   -ms-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
+}
+
+.left-padding {
+  padding-left: 15px;
+}
+
+.left-padding-zero {
+  padding-left: 0;
 }
 
 .product-info .color-picker li {
@@ -2717,6 +2745,8 @@ div.b-item-card-mod:hover .b-card-buttons {
 }
 
 .b-quantity {
+  padding: 0;
+  max-width: 111px;
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #cccccc;
@@ -2756,7 +2786,7 @@ div.b-item-card-mod:hover .b-card-buttons {
 .b-quantity .spinner-btn {
   float: right;
   height: 40px;
-  margin-left: -1px;
+  margin-left: 0;
 }
 .b-quantity .spinner-btn .btn {
   width: 40px;

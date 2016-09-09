@@ -12,9 +12,9 @@
   var modalBody = document.querySelector('.modal-body');
   var checkbox = document.querySelectorAll('input[type=checkbox]');
   var color = document.querySelector('.color-picker');
-  var classic = document.querySelector('#classic');
-  var fantasy = document.querySelector('#fantasy');
-  var dayAndNight = document.querySelector('#day-and-night');
+  var class1 = document.querySelector('#class1');
+  var class2 = document.querySelector('#class2');
+  var class3 = document.querySelector('#class3');
 
   function selectColor(options) {
     $(".color-picker a").on('click', function(e){
@@ -26,8 +26,11 @@
     });
   }
 
-  classic.addEventListener('click', function(e) {
+  class1.addEventListener('click', function(e) {
     e.preventDefault();
+    class2.classList.remove('btn-active');
+    class3.classList.remove('btn-active');
+    this.classList.add('btn-active');
     $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
@@ -194,8 +197,11 @@
     selectColor();
   });
 
-  fantasy.addEventListener('click', function(e) {
+  class2.addEventListener('click', function(e) {
     e.preventDefault();
+    class1.classList.remove('btn-active');
+    class3.classList.remove('btn-active');
+    this.classList.add('btn-active');
     $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
@@ -362,8 +368,11 @@
     selectColor();
   });
 
-  dayAndNight.addEventListener('click', function(e) {
+  class3.addEventListener('click', function(e) {
     e.preventDefault();
+    class1.classList.remove('btn-active');
+    class2.classList.remove('btn-active');
+    this.classList.add('btn-active');
     $('.color-picker').fadeOut("fast");
     color.innerHTML = '';
     color.innerHTML = `<li class="color-selected">
