@@ -21,7 +21,8 @@
     position: absolute;
     z-index: 5;
     left: 50%;
-    transform: translateX(-50%) translateY(50%);
+    top: 10%;
+    transform: translateX(-50%);
     background-color: #fefefe;
     width: 50%;
     max-width: 500px;
@@ -100,12 +101,12 @@
 /* Add Animation */
 @-webkit-keyframes slideIn {
     from {top: -110%; opacity: 0}
-    to {top: 0; opacity: 1}
+    to {top: 10%; opacity: 1}
 }
 
 @keyframes slideIn {
     from {top: -110%; opacity: 0}
-    to {top: 0; opacity: 1}
+    to {top: 10%; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {
