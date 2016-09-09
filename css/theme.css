@@ -2691,7 +2691,7 @@ div.b-item-card-mod:hover .b-card-buttons {
     background: #e24545;
 }
 
-.btn-active {
+.btn-primary.btn-active {
     background: #fff;
     border: 1px solid #e24545;
     border-bottom: 1px solid #fff;
