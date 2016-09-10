@@ -6,6 +6,7 @@
 		<title>изо дърво от алекса</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<link href="css/master.css" rel="stylesheet">
+		<link href="css/modal.css" rel="stylesheet">
 
 		<!-- SWITCHER -->
 		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
@@ -503,49 +504,9 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 wow fadeInRight">
 								<div class="product-info">
-									<p class="product-name">
-										Щори "Изо дърво"
-									</p>
-									<!-- <div class="b-rating-availability">
-										<div class="rating">
-											<span class="star"><i class="fa fa-star"></i></span>
-											<span class="star"><i class="fa fa-star"></i></span>
-											<span class="star"><i class="fa fa-star"></i></span>
-											<span class="star"><i class="fa fa-star"></i></span>
-											<span class="star star-empty"><i class="fa fa-star-o"></i></span>
-											<span class="reviews-count">
-												<span class="review-counter">5</span> Review(s)
-											</span>
-										</div>
-										<div class="availability">
-											<span>In stock</span>
-										</div>
-									</div> -->
-									<!-- <p class="product-price">
-										$1,199.00
-										<span class="old-price">$1,399.00</span>
-									</p> -->
-									<div class="b-text">
-										<p>
-											Това което прави щората тип “Изо дърво” по-различна от стандартните щори,
-											е много добрата слънчезащита и идеалната топлоизолация. Тя прилича много
-											на дървените щори, но за разлика от истинското дърво, което се огъва и надува
-											от продължително слънцестоене, при новите супер модерни щори “Изо дърво”
-											този недостатък е самоизключващ се. Това се дължи на качеството и здравината
-											на материала от който се изработват ламелите. Не на последно място щората
-											"Изо дърво" създава добра звукоизолация, което създава уют и спокойствие в домашни условия.
-										</p>
-										<p>
-											Подходящи са за големи витрини ( заведения, фоайета на хотели и други ) със своето устойчиво закрепване.
-											Щорите “Изо дърво” дават вид на дървени щори, но предлагат повишена издръжливост и по-голяма ефективност.
-											Тези щори ще изглеждат зашеметяващо във всички области, а също могат да бъдат използва в мокри помещения
-											като ламелите не се влияят от вода и е много лесно да се чистят. Предлагат се в разнообразни цветове, за
-											да отговорят на Вашите декорни нужди.
-										</p>
-									</div>
 									<div class="b-color-size">
 										<div class="row">
-											<div class="col-xs-6 col-sm-6">
+											<div class="col-xs-12 col-sm-12">
 												<div class="b-color">
 													<span class="small-title">
 														цвят
@@ -584,60 +545,147 @@
 													</ul>
 												</div>
 											</div>
-											<div class="col-xs-6 col-sm-6">
-												<div class="b-size">
-													<span class="small-title">
-														size
-													</span>
-													<div class="b-filters clearfix">
-														<div class="size-options">
-															<select class="selectpicker" title="select size">
-																<option>8</option>
-																<option>12</option>
-																<option>16</option>
-															</select>
+
+											<div class="top-margin-small col-xs-12 col-sm-12 col-md-6 col-lg-6">
+												<div class="col-xs-6 col-sm-6 left-padding-zero">
+													<div class="b-size">
+														<span class="small-title left-padding-zero width-title col-xs-5 col-sm-12 col-md-12 col-lg-12">
+															широчина в см.
+														</span>
+														<div class="b-quantity col-xs-6 col-sm-12 col-md-12 col-lg-12">
+															<div class="input-group spinner" data-trigger="spinner">
+																<input id="width" type="text" data-rule="quantity" required>
+																<div class="spinner-btn">
+																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-xs-6 col-sm-6 left-padding-zero">
+													<div class="b-size">
+														<span class="small-title left-padding-zero width-title col-xs-5 col-sm-12 col-md-12 col-lg-12">
+															височина в см.
+														</span>
+														<div class="b-quantity col-xs-6 col-sm-12 col-md-12 col-lg-12">
+															<div class="input-group spinner" data-trigger="spinner">
+																<input id="height" type="text" data-rule="quantity" required>
+																<div class="spinner-btn">
+																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
+
+											<div class="top-margin-small col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp">
+												<div class="b-check-radio-holder">
+													<form method="get" action="typography.html#">
+														<div class="form-group">
+															<span class="left-padding-zero col-xs-5 col-sm-12 col-md-12 col-lg-12 small-title width-title">
+																Управление на щората
+															</span>
+															<div class="checkbox checkbox-1">
+																<input id="check1" class="myCheckbox" type="checkbox" value="ляво" name="check" checked>
+																<label for="check1">ляво управление</label>
+															</div>
+															<div class="checkbox checkbox-1">
+																<input id="check2" class="myCheckbox" type="checkbox" value="дясно" name="check">
+																<label for="check2">дясно управление</label>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small">
+												<div class="b-add clearfix">
+													<button id="calculate" class="btn btn-primary btn-sm">изчисли</button>
+												</div>
+											</div>
+
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small">
+												<div class="b-add clearfix">
+													<div id="result" class="input-result" type="text">резултат</div>
+												</div>
+											</div>
+
 										</div>
 									</div>
+
 									<div class="b-quantity-add">
-										<div class="row">
-											<div class="col-xs-6 col-sm-12 col-md-5 col-lg-4">
-												<span class="small-title">
-													Quantity
-												</span>
-												<div class="b-quantity">
-													<div class="input-group spinner" data-trigger="spinner">
-														<input type="text" data-rule="quantity" value="1">
-														<div class="spinner-btn">
-															<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
-															<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
-														</div>
-													</div>
-												</div>
-											</div>
+											<div class="row top-margin-small">
 											<div class="col-xs-6 col-sm-12 col-md-7 col-lg-8">
 												<div class="b-add clearfix">
 													<div class="pull-left">
-														<button class="btn btn-primary btn-sm">add to my cart</button>
-													</div>
-													<div class="add-wish-buttons pull-right">
-														<button class="btn btn-add">
-															<span class="ef icon_heart_alt"></span>
-														</button>
-														<button class="btn btn-add">
-															<span class="ef icon_mail_alt"></span>
-														</button>
+														<button id="add-in-cart" class="btn btn-primary btn-sm">добави в количката</button>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
+
+						<div class="row top-margin-small">
+							<div class="col-xs-12 col-sm-12 wow fadeInUp product-info">
+								<p class="product-name">
+									Щори "Изо дърво"
+								</p>
+								<div class="b-text">
+									<p>
+										Това което прави щората тип “Изо дърво” по-различна от стандартните щори,
+										е много добрата слънчезащита и идеалната топлоизолация. Тя прилича много
+										на дървените щори, но за разлика от истинското дърво, което се огъва и надува
+										от продължително слънцестоене, при новите супер модерни щори “Изо дърво”
+										този недостатък е самоизключващ се. Това се дължи на качеството и здравината
+										на материала от който се изработват ламелите. Не на последно място щората
+										"Изо дърво" създава добра звукоизолация, което създава уют и спокойствие в домашни условия.
+									</p>
+									<p>
+										Подходящи са за големи витрини ( заведения, фоайета на хотели и други ) със своето устойчиво закрепване.
+										Щорите “Изо дърво” дават вид на дървени щори, но предлагат повишена издръжливост и по-голяма ефективност.
+										Тези щори ще изглеждат зашеметяващо във всички области, а също могат да бъдат използва в мокри помещения
+										като ламелите не се влияят от вода и е много лесно да се чистят. Предлагат се в разнообразни цветове, за
+										да отговорят на Вашите декорни нужди.
+									</p>
+									<p>
+										Технически параметри:
+									<ul class="advantages-plise">
+										<li>Maкс. ширина: 2,6м;</li>
+										<li>Mин. ширина: 0,35м;</li>
+										<li>Макс. височина: 3,0м</li>
+										<li>Mин. височина: 0,30м;</li>
+									</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="myModal" class="modal">
+							<!-- <div class="col-xs-12 col-sm-12 wow fadeInUp product-info"> -->
+							  <!-- Modal content -->
+							  <div class="modal-content">
+							    <div class="modal-header">
+							      <span class="cancel">&times</span>
+							      <h2>Конфигурация Реди Плисе</h2>
+							    </div>
+							    <div class="modal-body">
+
+							    </div>
+							    <div class="modal-footer">
+							    </div>
+							  </div>
+							<!-- </div> -->
+						</div>
+
+
 					</div>
 				</div>
 
@@ -822,6 +870,7 @@
 
 
 		<script src="js/theme.js"></script>
+		<script src="js/izo-calc.js"></script>
 
 	</body>
 </html>
