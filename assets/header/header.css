@@ -161,9 +161,11 @@
 .header.navbar-scrolling .navbar .navbar-nav > li:hover > a, .header.navbar-scrolling .navbar .navbar-nav > li a:hover {
 	color: #333 !important;
 }
-.header.navbar-scrolling .navbar .toggle-menu-button .toggle-menu-button-icon span {
-	background: #333;
+
+img.login-btn {
+	width: 22px;
 }
+
 .header.navbar-scrolling .header-cart-count {
 	background: #333;
 	color: #fff;
@@ -598,7 +600,7 @@
 }
 .toggle-menu-button .toggle-menu-button-icon {
 	width: 22px;
-	height: 17px;
+	height: 22px;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
@@ -808,9 +810,9 @@
 .toggle-menu-button {
     border: none;
     background: none;
-    margin-top: 9px;
+    margin-top: 6px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 .header-section {
 	padding: 180px 0 100px;

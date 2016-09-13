@@ -230,17 +230,40 @@ header {
 }
 .wrap-fixed-menu .top-items {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: table;
 }
 .wrap-fixed-menu .top-items .menu-item {
   border-bottom: 1px solid #484848;
 }
-.wrap-fixed-menu .bottom-items {
+
+form.login, form.register {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form.login .btn {
+  width: 100%;
+}
+
+form.register .btn {
+  width: 49%;
+}
+
+form.register .top-margin-small, form.login .top-margin-small {
+  margin: 0;
+  margin-top: 10px;
+}
+
+form.login .input-result, form.register .input-result {
+  text-align: left;
+}
+/*.wrap-fixed-menu .bottom-items {
   width: 100%;
   height: 50%;
   display: table;
-}
+}*/
 .wrap-fixed-menu .menu-item {
   display: inline-block;
   vertical-align: middle;
