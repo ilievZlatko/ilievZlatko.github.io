@@ -24,23 +24,33 @@
 		<!-- ========================== -->
 
 		<div class="wrap-fixed-menu" id="fixedMenu">
-			<div class="top-items"> <a href="blog.html" class="top-menu-item menu-item"> <span class="subtitle">All The Latest</span> <span class="title">Blog</span> </a> <a href="portfolio.html" class="top-menu-item menu-item"> <span class="subtitle">Awesome</span> <span class="title">Portfolio</span> </a> </div>
-			<div class="bottom-items"> <a href="contact.html" class="bottom-menu-item menu-item"> <span class="subtitle">We Are Designers</span> <span class="title">Contacts</span> </a>
-				<div class="bottom-menu-item menu-item contact-info">
-					<div class="row">
-						<div class="col-md-12"> <i class="fa fa-home"></i>
-							<label>ADDRESS</label>
-							<p class="vcenter">746 Roberts Road Findlay, OH 45840</p>
-						</div>
-						<div class="col-md-12"> <i class="fa fa-phone"></i>
-							<label>PHONE</label>
-							<p class="vcenter">+201 126 216 88</p>
-						</div>
-						<div class="col-md-12"> <i class="fa fa-envelope"></i>
-							<label>EMAIL</label>
-							<p class="vcenter">support@rettic.com</p>
-						</div>
-					</div>
+			<div class="top-items">
+				<div href="blog.html" class="top-menu-item menu-item">
+					<span class="subtitle">you can login here</span>
+					<span class="title">Login</span>
+					<form action="" id="login-form" class="login">
+						<label for="username" class="top-margin-small">username:</label>
+						<input type="text" id="username" class="input-result">
+						<label for="password" class="top-margin-small">password:</label>
+						<input type="password" id="password" class="input-result">
+						<input type="submit" value="Login" class="btn btn-sm btn-primary top-margin-small">
+					</form>
+				</div>
+				<div href="portfolio.html" class="top-menu-item menu-item">
+					<span class="subtitle">or you can register here</span>
+					<span class="title">Register</span>
+					<form action="" id="register-form" class="register">
+						<label for="name" class="top-margin-small">name:</label>
+						<input type="text" id="name" class="input-result">
+						<label for="e-mail" class="top-margin-small">e-mail:</label>
+						<input type="email" id="email" class="input-result">
+						<label for="password" class="top-margin-small">password:</label>
+						<input type="password" id="password" class="input-result">
+						<label for="password" class="top-margin-small validate-password">retype password:</label>
+						<input type="password" id="retype-password" class="input-result">
+						<input type="reset" value="clear form" class="btn btn-sm btn-primary top-margin-small">
+						<input type="submit" value="register" class="btn btn-sm btn-primary top-margin-small">
+					</form>
 				</div>
 			</div>
 		</div>
@@ -88,7 +98,7 @@
 					<a class="heading-line" href="http://www.alexabg.com/">фирмен сайт</a>
 				</li>
 				<li>
-					<a class="heading-line" href="category-2.html">взимане на размери</a>
+					<a class="heading-line" href="razmeri.html">взимане на размери</a>
 				</li>
 				<li>
 					<a class="heading-line" href="typography.html">за нас</a>
@@ -133,7 +143,7 @@
 					<a class="heading-line" href="http://www.alexabg.com/">фирмен сайт</a>
 				</li>
 				<li>
-					<a class="heading-line" href="category-2.html">взимане на размери</a>
+					<a class="heading-line" href="razmeri.html">взимане на размери</a>
 				</li>
 				<li>
 					<a class="heading-line" href="typography.html">за нас</a>
@@ -341,7 +351,7 @@
 										<!-- Mobile Trigger End-->
 									</li>
 									<li><button class="  js-toggle-screen    toggle-menu-button ">
-											<div class="toggle-menu-button-icon"> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
+											<div class="toggle-menu-button-icon"> <img src="images/login-logo.png" alt="login" class="login-btn"> </div>
 										</button></li>
 									<li class="no-hover"><a href="#">контакти: (02) 955 43 18</a></li>
 								</ul>
@@ -395,7 +405,7 @@
 									<a class="heading-line" href="http://www.alexabg.com/">фирмен сайт</a>
 								</li>
 								<li>
-									<a class="heading-line" href="category-2.html">взимане на размери</a>
+									<a class="heading-line" href="razmeri.html">взимане на размери</a>
 								</li>
 								<li>
 									<a class="heading-line" href="typography.html">за нас</a>
