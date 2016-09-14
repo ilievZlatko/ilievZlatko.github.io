@@ -12,9 +12,457 @@
   var modalBody = document.querySelector('.modal-body');
   var checkbox = document.querySelectorAll('input[type=checkbox]');
   var color = document.querySelector('.color-picker');
-  var class1 = document.querySelector('#class1');
-  var class2 = document.querySelector('#class2');
-  var class3 = document.querySelector('#class3');
+  var classContent = document.querySelectorAll('[id^=class]');
+  var template1 = `<li class="color-selected">
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-1.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-2.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-3.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-4.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-5.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-6.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-7.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-8.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-9.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-10.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-11.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-12.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-13.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-14.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-15.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-16.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-17.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-18.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-19.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-20.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-21.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-22.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-23.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-24.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-25.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-26.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-27.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-28.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-29.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-30.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-31.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
+                      </a>
+                    </li>`;
+  var template2 = `<li class="color-selected">
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-1.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-2.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-3.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-4.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-5.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-6.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-7.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-8.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-9.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-10.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-11.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-12.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-13.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-14.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-15.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-16.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-17.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-18.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-19.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-20.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-21.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-22.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-23.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-24.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-25.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-26.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-27.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-28.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-29.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-30.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-31.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
+                      </a>
+                    </li>`;
+  var template3 = `<li class="color-selected">
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-1.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-2.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-3.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-4.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-5.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-6.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-7.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-8.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-9.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-10.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-11.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-12.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-13.jpg" alt="/">
+                      </a>
+                    </li>`;
+  var template4 = `<li class="color-selected">
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-1.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-2.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-3.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-4.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-5.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-6.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-7.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-8.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-9.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-10.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-11.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-12.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="media/product-detail/colors/plise-13.jpg" alt="/">
+                      </a>
+                    </li>`;
 
   function selectColor(options) {
     $(".color-picker a").on('click', function(e){
@@ -26,422 +474,49 @@
     });
   }
 
-  class1.addEventListener('click', function(e) {
-    e.preventDefault();
-    class2.classList.remove('btn-active');
-    class3.classList.remove('btn-active');
-    this.classList.add('btn-active');
-    $('.color-picker').fadeOut("fast");
-    color.innerHTML = '';
-    color.innerHTML = `<li class="color-selected">
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-1.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-2.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-3.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-4.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-5.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-6.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-7.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-8.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-9.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-10.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-11.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-12.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-13.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-14.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-15.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-16.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-17.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-18.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-19.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-20.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-21.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-22.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-23.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-24.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-25.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-26.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-27.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-28.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-29.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-30.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-31.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
-                        </a>
-                      </li>`;
-    $('.color-picker').fadeIn('fast');
-    selectColor();
-  });
+  function RemoveClass() {
+    [].forEach.call(classContent, function(item) {
+      item.classList.remove('btn-active');
+    });
+  }
 
-  class2.addEventListener('click', function(e) {
-    e.preventDefault();
-    class1.classList.remove('btn-active');
-    class3.classList.remove('btn-active');
-    this.classList.add('btn-active');
-    $('.color-picker').fadeOut("fast");
-    color.innerHTML = '';
-    color.innerHTML = `<li class="color-selected">
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-1.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-2.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-3.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-4.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-5.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-6.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-7.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-8.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-9.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-10.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-11.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-12.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-13.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-14.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-15.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-16.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-17.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-18.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-19.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-20.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-21.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-22.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-23.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-24.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-25.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-26.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-27.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-28.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-29.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-30.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-31.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/rimski-32.jpg" alt="/">
-                        </a>
-                      </li>`;
-    $('.color-picker').fadeIn('fast');
-    selectColor();
-  });
-
-  class3.addEventListener('click', function(e) {
-    e.preventDefault();
-    class1.classList.remove('btn-active');
-    class2.classList.remove('btn-active');
-    this.classList.add('btn-active');
-    $('.color-picker').fadeOut("fast");
-    color.innerHTML = '';
-    color.innerHTML = `<li class="color-selected">
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-1.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-2.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-3.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-4.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-5.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-6.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-7.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-8.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-9.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-10.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-11.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-12.jpg" alt="/">
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <img src="media/product-detail/colors/plise-13.jpg" alt="/">
-                        </a>
-                      </li>`;
-    $('.color-picker').fadeIn('fast');
-    selectColor();
+  [].forEach.call(classContent, function(item) {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      RemoveClass();
+      $('.color-picker').fadeOut("fast");
+      this.classList.add('btn-active');
+      var idNum = this.id;
+      var arr = idNum.split('class')
+      var numb = parseInt(arr[arr.length - 1]);
+      color.innerHTML = '';
+      switch (numb) {
+        case 1:
+          color.innerHTML = template1;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+        break;
+        case 2:
+          color.innerHTML = template2;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+        break;
+        case 3:
+          color.innerHTML = template3;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+        break;
+        case 4:
+          color.innerHTML = template3;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+        break;
+        default:
+          color.innerHTML = template1;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+      }
+    });
   });
 
   [].forEach.call(checkbox, function(checkboxClicked) {
