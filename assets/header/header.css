@@ -1104,8 +1104,7 @@ html [off-canvas*=open] {
 }
 .search-global__note {
 	margin-top: 41px;
-	font-family: Montserrat;
-	font-size: 14pxm;
+	font-size: 14px;
 	color: #555;
 }
 
