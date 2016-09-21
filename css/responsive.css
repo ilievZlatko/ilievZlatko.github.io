@@ -34,6 +34,11 @@
 }
 
 @media screen and (max-width: 840px) {
+
+	.wrap-fixed-menu {
+		top: 0;
+	}
+
 	.top-items .top-menu-item {
 		width: 100%;
     height: auto;
