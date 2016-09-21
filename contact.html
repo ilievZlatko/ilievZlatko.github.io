@@ -16,7 +16,16 @@
 	</head>
 	<body>
 
-
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.7";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 
 
 		<!-- ========================== -->
@@ -301,10 +310,15 @@
 								</div>
 							</div>
 							<div class="col-header-center-right">
-								<a class="btn_header_search" href="#"><span class="ef icon_search "></span></a>
+								<a class="btn_header" href="#"><span class="ef icon_profile js-toggle-screen toggle-menu-button"></span></a>
 
-								<a href="#"><span class="ef icon_bag_alt "></span>
-									<div class="counter-wrapper"><span class="counter">4</span></div></a></div>
+								<a href="#">
+									<span class="ef icon_bag_alt "></span>
+									<div class="counter-wrapper">
+										<span class="counter">4</span>
+									</div>
+								</a>
+							</div>
 
 						</div>
 					</nav>
@@ -481,21 +495,11 @@
 							<div class="footer-menu-item wow fadeInLeft">
 								<h6>Бързи линкове</h6>
 								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">Living & Dinning</a></li>
-									<li><a href="javascript:void(0);">Bedroom Accessories</a></li>
-									<li><a href="javascript:void(0);">Fresh Catalog</a></li>
-									<li><a href="javascript:void(0);">Track Shipment</a></li>
-									<li><a href="javascript:void(0);">Customer Service</a></li>
-									<li><a href="javascript:void(0);">FAQ’s</a></li>
-									<li><a href="javascript:void(0);">Returns & exchanges</a></li>
-								</ul>
-								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">My Orders</a></li>
-									<li><a href="javascript:void(0);">Delivery Information</a></li>
-									<li><a href="javascript:void(0);">My Account</a></li>
-									<li><a href="javascript:void(0);">Login or Register</a></li>
-									<li><a href="javascript:void(0);">My Cart</a></li>
-									<li><a href="javascript:void(0);">Wishlist</a></li>
+									<li><a href="javascript:void(0);">Моят профил</a></li>
+									<li><a href="javascript:void(0);">Плащане</a></li>
+									<li><a href="javascript:void(0);">Монтаж</a></li>
+									<li><a href="javascript:void(0);">Общи условия</a></li>
+									<li><a href="javascript:void(0);">Доставка</a></li>
 								</ul>
 							</div>
 						</div>
@@ -517,9 +521,6 @@
 										<li>
 											http://www.shtorionline.com/
 										</li>
-										<li>
-											Делник: 08:30 -18:00 ч.
-										</li>
 									</ul>
 								</div>
 							</div>
@@ -536,18 +537,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<div class="b-text text-right wow fadeInRight">
-								<h6>ЗА НАС</h6>
-								<p>
-									"Стоилов и Ко" ЕООД е създадена през 1992 г. и през
-									<br>
-									годините запазената търговска марка "ALEXA" се налага
-									<br>
-									на българския пазар като символ за качество и прецизност
-									<br>
-									при изработката на различните видове щори формиращи
-									<br>
-									гамата от производството на фирмата.
-								</p>
+								<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-height="200px">
+									<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+										<a href="https://www.facebook.com/facebook">Facebook</a>
+									</blockquote>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -559,7 +553,7 @@
 								<div class="clearfix">
 									<div class="b-copy pull-left">
 										<p>
-											© Copyright 2016 <a href="index.html">ShopONE.</a> All Rights Reserved.
+											© Copyright 2016 <a href="http://www.shtorionline.com" target="_blank">www.shtorionline.com</a> <a href="http://webimpression.net/" target="_blank">http://webimpression.net</a> All Rights Reserved.
 										</p>
 									</div>
 									<div class="b-payments pull-right">

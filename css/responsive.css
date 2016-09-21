@@ -13,11 +13,11 @@
 -------------------------------------------------------------------*/
 
 /*header*/
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 	.wrap-fixed-menu {
-	display: none !important;
-}
-}
+		display: none !important;
+	}
+}*/
 /* header-nav */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	#cart-wrapper {
@@ -32,8 +32,27 @@
 	right: -50%;
 }
 }
+
+@media screen and (max-width: 840px) {
+	.top-items .top-menu-item {
+		width: 100%;
+    height: auto;
+    display: block;
+    padding: 50px 30px;
+	}
+
+	.top-items .close-btn {
+		display: block;
+	}
+
+	.top-items form.register .btn {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 767px) {
-	.b-top-line {
+
+.b-top-line {
 	padding: 25px 0 15px;
 	min-height: 165px;
 }
