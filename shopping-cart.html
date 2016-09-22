@@ -19,11 +19,11 @@
 		<div id="fb-root"></div>
 		<script>
 			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.7";
-				fjs.parentNode.insertBefore(js, fjs);
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.7";
+			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 
@@ -32,37 +32,38 @@
 		<!-- FULL SCREEN MENU  -->
 		<!-- ========================== -->
 
-		<div class="wrap-fixed-menu" id="fixedMenu">
-			<div class="top-items">
-				<div href="blog.html" class="top-menu-item menu-item">
-					<span class="subtitle">you can login here</span>
-					<span class="title">Login</span>
-					<form action="" id="login-form" class="login">
-						<label for="username" class="top-margin-small">e-mail:</label>
-						<input type="text" id="username" class="input-result">
-						<label for="password" class="top-margin-small">password:</label>
-						<input type="password" id="password" class="input-result">
-						<input type="submit" value="Login" class="btn btn-sm btn-primary top-margin-small">
-					</form>
+				<div class="wrap-fixed-menu" id="fixedMenu">
+					<div class="close-btn">&#10005;</div>
+					<div class="top-items">
+						<div href="blog.html" class="top-menu-item menu-item">
+							<span class="subtitle">влизане с профил</span>
+							<span class="title">логване</span>
+							<form action="" id="login-form" class="login">
+								<label for="username" class="top-margin-small">имейл:</label>
+								<input type="text" id="username" class="input-result">
+								<label for="password" class="top-margin-small">парола:</label>
+								<input type="password" id="password" class="input-result">
+								<input type="submit" value="влизане" class="btn btn-sm btn-primary top-margin-small">
+							</form>
+						</div>
+						<div href="portfolio.html" class="top-menu-item menu-item">
+							<span class="subtitle">регистрация на профил</span>
+							<span class="title">регистрация</span>
+							<form action="" id="register-form" class="register">
+								<label for="name" class="top-margin-small">име:</label>
+								<input type="text" id="name" class="input-result">
+								<label for="e-mail" class="top-margin-small">имейл:</label>
+								<input type="email" id="email" class="input-result">
+								<label for="password" class="top-margin-small">парола:</label>
+								<input type="password" id="password" class="input-result">
+								<label for="password" class="top-margin-small validate-password">повтори паролата:</label>
+								<input type="password" id="retype-password" class="input-result">
+								<input type="reset" value="изчистване" class="btn btn-sm btn-primary top-margin-small">
+								<input type="submit" value="регистрация" class="btn btn-sm btn-primary top-margin-small">
+							</form>
+						</div>
+					</div>
 				</div>
-				<div href="portfolio.html" class="top-menu-item menu-item">
-					<span class="subtitle">or you can register here</span>
-					<span class="title">Register</span>
-					<form action="" id="register-form" class="register">
-						<label for="name" class="top-margin-small">name:</label>
-						<input type="text" id="name" class="input-result">
-						<label for="e-mail" class="top-margin-small">e-mail:</label>
-						<input type="email" id="email" class="input-result">
-						<label for="password" class="top-margin-small">password:</label>
-						<input type="password" id="password" class="input-result">
-						<label for="password" class="top-margin-small validate-password">retype password:</label>
-						<input type="password" id="retype-password" class="input-result">
-						<input type="reset" value="clear form" class="btn btn-sm btn-primary top-margin-small">
-						<input type="submit" value="register" class="btn btn-sm btn-primary top-margin-small">
-					</form>
-				</div>
-			</div>
-		</div>
 
 		<!-- ========================== -->
 		<!-- SEARCH MODAL  -->
@@ -74,9 +75,9 @@
 					<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 						<div class="navbar-search">
 							<form class="search-global" _lpchecked="1">
-								<input type="text" placeholder="Type to search" autocomplete="off" name="s" value="" class="search-global__input">
+								<input type="text" placeholder="Въведи за търсене" autocomplete="off" name="s" value="" class="search-global__input">
 								<button class="search-global__btn"><i class="icon fa fa-search"></i></button>
-								<div class="search-global__note">Begin typing your search above and press return to search.</div>
+								<div class="search-global__note">Въведете желаното от вас и натиснете "enter"</div>
 							</form>
 						</div>
 					</div>
@@ -89,7 +90,6 @@
 		<!-- MOBILE MENU  -->
 		<!-- ========================== -->
 		<div off-canvas="mobile-slidebar left overlay"> <a href="index.html" class="navbar-brand scroll"> <img alt="logo" src="images/logo.png" class="normal-logo "> <img alt="logo" src="images/logo-dark.png" class="scroll-logo hidden-xs"> </a>
-
 
 			<ul class="nav navbar-nav ">
 				<li>
@@ -114,7 +114,6 @@
 					<a class="heading-line" href="contact.html">контакти</a>
 				</li>
 			</ul>
-
 
 		</div>
 
@@ -226,7 +225,6 @@
 
 
 
-
 		<!-- Loader -->
 		<div id="page-preloader"><span class="spinner"></span></div>
 		<!-- Loader end -->
@@ -294,11 +292,7 @@
 										<!-- Mobile Trigger End-->
 									</li>
 									<li>
-										<button class="js-toggle-screen toggle-menu-button">
-											<div class="toggle-menu-button-icon">
-												<img src="images/login-logo.png" alt="login" class="login-btn">
-											</div>
-										</button>
+
 									</li>
 									<li class="no-hover"><a href="#">(02) 955 43 18</a></li>
 								</ul>
@@ -312,11 +306,17 @@
 									</button>
 								</div>
 							</div>
-							<div class="col-header-center-right">
-								<a class="btn_header_search" href="#"><span class="ef icon_search "></span></a>
 
-								<a href="#"><span class="ef icon_bag_alt "></span>
-									<div class="counter-wrapper"><span class="counter">4</span></div></a></div>
+							<div class="col-header-center-right">
+								<a class="btn_header" href="#"><span class="ef icon_profile js-toggle-screen toggle-menu-button"></span></a>
+
+								<a href="shopping-cart.html">
+									<span class="ef icon_bag_alt "></span>
+									<div class="counter-wrapper">
+										<span class="counter">4</span>
+									</div>
+								</a>
+							</div>
 
 						</div>
 					</nav>
@@ -347,13 +347,10 @@
 								</li>
 							</ul>
 
-
 						</div>
 					</div>
 				</div>
 			</header>
-
-
 
 			<section class="section-shopping-cart">
 				<div class="b-checkout-heading">
@@ -361,7 +358,7 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-12">
 								<div class="heading checkout-heading text-center">
-									<h2><strong>My Shopping Cart</strong></h2>
+									<h2><strong>Моята количка</strong></h2>
 								</div>
 								<div class="b-check-state wow fadeInUp">
 									<div class="check-position current-check">
@@ -369,7 +366,7 @@
 											<span class="ef icon_cart_alt"></span>
 										</p>
 										<p>
-											<span class="text-uppercase"><strong>shopping cart</strong></span>
+											<span class="text-uppercase"><strong>количка</strong></span>
 										</p>
 									</div>
 									<div class="check-arrow">
@@ -380,7 +377,7 @@
 											<span class="ef icon_creditcard"></span>
 										</p>
 										<p>
-											<span class="text-uppercase"><strong>checkout info</strong></span>
+											<span class="text-uppercase"><strong>начин на плащане</strong></span>
 										</p>
 									</div>
 									<div class="check-arrow">
@@ -391,7 +388,7 @@
 											<span class="ef icon_archive_alt "></span>
 										</p>
 										<p>
-											<span class="text-uppercase"><strong>place the order</strong></span>
+											<span class="text-uppercase"><strong>поръчка</strong></span>
 										</p>
 									</div>
 								</div>
@@ -408,10 +405,10 @@
 										<table class="table">
 											<thead>
 												<tr>
-													<th>product details</th>
-													<th>unit price</th>
-													<th>Quantity</th>
-													<th colspan="2">subtotal</th>
+													<th>продукти</th>
+													<th>единична цена</th>
+													<th>количество</th>
+													<th colspan="2">междинна цена</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -425,9 +422,9 @@
 															</div>
 															<div class="caption">
 																<p class="product-name">
-																	Carter Ottoman
+																	Щори роло
 																	<br>
-																	<span class="options">Brand :: SilverStok</span>
+																	<span class="options">цвят : SilverStok</span>
 																</p>
 															</div>
 														</div>
@@ -435,7 +432,7 @@
 													<td class="price">
 														<div class="caption">
 															<p class="product-price">
-																$105.00
+																105.00 лв.
 															</p>
 														</div>
 													</td>
@@ -453,7 +450,7 @@
 													<td class="subtotal">
 														<div class="caption">
 															<p class="product-price">
-																<span class="subtotal">$299.00</span>
+																<span class="subtotal">299.00 лв.</span>
 															</p>
 														</div>
 													</td>
@@ -474,9 +471,9 @@
 															</div>
 															<div class="caption">
 																<p class="product-name">
-																	3d small bowl
+																	изо дърво
 																	<br>
-																	<span class="options">Color :: white</span>
+																	<span class="options">цвят : white</span>
 																</p>
 															</div>
 														</div>
@@ -484,7 +481,7 @@
 													<td class="price">
 														<div class="caption">
 															<p class="product-price">
-																$360.00
+																360.00 лв.
 															</p>
 														</div>
 													</td>
@@ -502,7 +499,7 @@
 													<td class="subtotal">
 														<div class="caption">
 															<p class="product-price">
-																<span class="subtotal">$360.00</span>
+																<span class="subtotal">360.00 лв.</span>
 															</p>
 														</div>
 													</td>
@@ -523,9 +520,9 @@
 															</div>
 															<div class="caption">
 																<p class="product-name">
-																	leather chair
+																	японска стена
 																	<br>
-																	<span class="options">Color :: Soft Ice</span>
+																	<span class="options">цвят : Soft Ice</span>
 																</p>
 															</div>
 														</div>
@@ -533,7 +530,7 @@
 													<td class="price">
 														<div class="caption">
 															<p class="product-price">
-																$799.00
+																799.00 лв.
 															</p>
 														</div>
 													</td>
@@ -551,7 +548,7 @@
 													<td class="subtotal">
 														<div class="caption">
 															<p class="product-price">
-																<span class="subtotal">$799.00</span>
+																<span class="subtotal">799.00 лв.</span>
 															</p>
 														</div>
 													</td>
@@ -565,16 +562,16 @@
 								</div>
 								<div class="cart-buttons clearfix">
 									<div class="pull-left">
-										<button class="btn btn-default btn-sm">clear cart</button>
+										<button class="btn btn-default btn-sm">изчисти количката</button>
 										&ensp;
-										<button class="btn btn-default btn-sm">update cart</button>
+										<button class="btn btn-default btn-sm">обноиви количката</button>
 									</div>
 									<div class="pull-right" style="padding-right: 25px;">
-										<button type="button" class="btn btn-primary-arrow btn-sm-arrow">
-											continue shopping
+										<a type="button" href="shtori.html" class="btn btn-primary-arrow btn-sm-arrow">
+											продължи пазаруването
 											<span class="ef icon_minus-06 "></span>
 											<span class="ef arrow_right"></span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -586,9 +583,9 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeInLeft">
 								<div class="b-coupon">
-									<p class="legend-mod">Discount code</p>
+									<p class="legend-mod">Код за отстъпка</p>
 									<p>
-										If you have a coupon code, please enter here
+										Ако имате купон за отстъпка, въведете кода тук.
 									</p>
 									<form id="coupon-form" class="b-form" method="get" action="shopping-cart.html#">
 										<div class="form-group">
@@ -597,7 +594,7 @@
 													<input type="text" class="form-control">
 												</div>
 												<div class="col-xs-4 col-sm-4">
-													<button class="btn btn-default btn-sm">apply</button>
+													<button class="btn btn-default btn-sm">приложи</button>
 												</div>
 											</div>
 										</div>
@@ -606,24 +603,24 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInDown">
 								<div class="b-coupon">
-									<p class="legend-mod">shipping estimate</p>
+									<p class="legend-mod">детайли за доставка</p>
 									<p>
-										Calculate the shipping cost here
+										Изчисли доставката тук
 									</p>
 									<form id="shipping-form" class="b-form" method="get" action="shopping-cart.html#">
 										<div class="form-group">
 											<div class="row">
 												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="country *">
+													<input type="text" class="form-control" placeholder="град *">
 												</div>
 												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="state / province *">
+													<input type="text" class="form-control" placeholder="област / община *">
 												</div>
 												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="zip code *">
+													<input type="text" class="form-control" placeholder="пощенски код *">
 												</div>
 												<div class="col-xs-12 col-sm-12">
-													<button class="btn btn-default btn-sm">estimate</button>
+													<button class="btn btn-default btn-sm">приблизително</button>
 												</div>
 											</div>
 										</div>
@@ -637,36 +634,36 @@
 											<tbody>
 												<tr>
 													<td class="text-right">
-														Sub Total
+														Междинна сума:
 													</td>
 													<td class="text-right">
-														<strong>$1,458.00</strong>
+														<strong>1,458.00 лв.</strong>
 													</td>
 												</tr>
 												<tr>
 													<td class="text-right">
-														Applicable Tax
+														ДДС:
 													</td>
 													<td class="text-right">
 														<strong>
-															$50.00
+															50.00 лв.
 														</strong>
 													</td>
 												</tr>
 												<tr>
 													<td class="text-right">
-														Shipping
+														Доставка:
 													</td>
 													<td class="text-right">
-														<strong> $120.00</strong>
+														<strong> 120.00 лв.</strong>
 													</td>
 												</tr>
 												<tr>
 													<td class="text-right">
-														Grand Total
+														Сума за плащане:
 													</td>
 													<td class="text-right">
-														<strong>$1,628.00</strong>
+														<strong>1,628.00 лв.</strong>
 													</td>
 												</tr>
 											</tbody>
@@ -674,7 +671,7 @@
 									</div>
 									<div class="text-center">
 										<button type="button" class="btn btn-secondary-arrow btn-sm-arrow">
-											proceed to checkout
+											продължи с плащането
 											<span class="ef icon_minus-06 "></span>
 											<span class="ef arrow_right"></span>
 										</button>
@@ -685,6 +682,8 @@
 					</div>
 				</div>
 			</section>
+
+
 			<footer>
 				<div class="pre-footer"></div>
 				<div class="container">
@@ -692,11 +691,11 @@
 						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 center-block">
 							<div class="b-footer-subsc">
 								<div class="subsc-title text-center">
-									<h4 class="heading-bold-merri">Subscribe to Newsletter</h4>
-									<p>Subscribe to mailing list & get latest products arrrivals, discounts & special offers!</p>
+									<h4 class="heading-bold-merri">ЗАПИШЕТЕ СЕ ЗА НАШИЯ БЮЛЕТИН</h4>
+									<p>ВЪВЕДЕТЕ СВОЯ E-MAIL АДРЕС АКО ЖЕЛАЕТЕ ДА ПОЛУЧАВАТЕ ИНФОРМАЦИЯ ОТ НАС</p>
 								</div>
 								<div class="subsc-mail">
-									<form id="comment-reply-form" class="b-form" method="get" action="shopping-cart.html#">
+									<form id="comment-reply-form" class="b-form" method="get" action="index.html#">
 										<div class="form-group">
 											<div class="clearfix">
 												<div class="col-xs-12 col-sm-6 col-sm-offset-2">
@@ -704,7 +703,7 @@
 												</div>
 												<div class="col-xs-12 col-sm-4">
 													<button type="submit" class="btn btn-primary-arrow btn-sm-arrow">
-														subscribe
+														запиши се
 														<span class="ef icon_minus-06 "></span>
 														<span class="ef arrow_right"></span>
 													</button>
@@ -721,47 +720,33 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="footer-menu-item wow fadeInLeft">
-								<h6>Quick links</h6>
+								<h6>Бързи линкове</h6>
 								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">Living & Dinning</a></li>
-									<li><a href="javascript:void(0);">Bedroom Accessories</a></li>
-									<li><a href="javascript:void(0);">Fresh Catalog</a></li>
-									<li><a href="javascript:void(0);">Track Shipment</a></li>
-									<li><a href="javascript:void(0);">Customer Service</a></li>
-									<li><a href="javascript:void(0);">FAQ’s</a></li>
-									<li><a href="javascript:void(0);">Returns & exchanges</a></li>
-								</ul>
-								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">My Orders</a></li>
-									<li><a href="javascript:void(0);">Delivery Information</a></li>
-									<li><a href="javascript:void(0);">My Account</a></li>
-									<li><a href="javascript:void(0);">Login or Register</a></li>
-									<li><a href="javascript:void(0);">My Cart</a></li>
-									<li><a href="javascript:void(0);">Wishlist</a></li>
+									<li><a href="javascript:void(0);">Моят профил</a></li>
+									<li><a href="javascript:void(0);">Плащане</a></li>
+									<li><a href="javascript:void(0);">Монтаж</a></li>
+									<li><a href="javascript:void(0);">Общи условия</a></li>
+									<li><a href="javascript:void(0);">Доставка</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center wow fadeIn">
 							<div class="b-logo">
 								<a href="index.html">
-									<h5>sh<span>o</span>p<span>o</span>ne</h5>
-									<p>one shop solution for all needs</p>
+									<img class="scroll-logo hidden-xs" src="images/logo.png" alt="logo">
 								</a>
 							</div>
 							<div class="b-footer-contacts">
 								<div class="footer-contacts-list">
 									<ul class="list-unstyled">
 										<li>
-											95 Queen Street, Newyork NY 36900
+											София, бул. "Овча купел" №72
 										</li>
 										<li>
-											(+01) 123 4567  -  0800 123 4567
+											Tел: +359 2 9554318 / Факс: +359 2 9554296
 										</li>
 										<li>
-											order (at) shopone.com
-										</li>
-										<li>
-											Monday to Saturday: 9:00 am - 7:00 pm
+											http://www.shtorionline.com/
 										</li>
 									</ul>
 								</div>
@@ -779,20 +764,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<div class="b-text text-right wow fadeInRight">
-								<h6>About us</h6>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									<br>
-									adipisicing elit sed do eiusmod tempor incididunt
-									<br>
-									ut labore et dolore magna aliqua. Ut enim ad
-									<br>
-									minim veniam quis nostrud exercitation ullamco
-									<br>
-									laboris nisi ut aliquip ex ea commodo consequat.
-									<br>
-									Duis aute irure dolor in reprehenderit.
-								</p>
+								<div class="fb-page" data-href="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-height="200px">
+									<blockquote cite="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf" class="fb-xfbml-parse-ignore">
+										<a href="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf">Facebook</a>
+									</blockquote>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -804,19 +780,18 @@
 								<div class="clearfix">
 									<div class="b-copy pull-left">
 										<p>
-											© Copyright 2016 <a href="index.html">ShopONE.</a> All Rights Reserved.
+											© Copyright 2016 <a href="http://www.shtorionline.com" target="_blank">www.shtorionline.com</a> <a href="http://webimpression.net/" target="_blank">http://webimpression.net</a> All Rights Reserved.
 										</p>
 									</div>
 									<div class="b-payments pull-right">
 										<ul class="list-unstyled">
 											<li>
-												<img src="media/paycards/1.jpg" class="img-responsive" alt="/">
+												<img src="media/paycards/Maestro.png" class="img-responsive" alt="/">
 											</li>
-											<li><img src="media/paycards/2.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/3.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/4.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/5.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/6.jpg" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/mastercard.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/visa.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/speedy.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/econt.png" class="img-responsive" alt="/"></li>
 										</ul>
 									</div>
 								</div>
