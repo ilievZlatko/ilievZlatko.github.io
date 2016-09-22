@@ -10,22 +10,36 @@
   var modal = document.querySelector('#myModal');
   var span = document.querySelector(".cancel");
   var modalBody = document.querySelector('.modal-body');
+  var checkbox = document.querySelectorAll('input[type=checkbox]');
 
+  // switch between checkboxes. make active only the selected one
+  [].forEach.call(checkbox, function(checkboxClicked) {
+    checkboxClicked.addEventListener('click', function() {
+      [].forEach.call(checkbox, function(checkbox){
+        checkbox.checked = false;
+      });
+      this.checked = true;
+    });
+  });
+
+  //add event listener when user selects color, detect color and create the modal box
   calculate.addEventListener('click', function(){
-    var res = (((widthVal.value * heightVal.value) * 0.0055816) * 1.2).toFixed(2) + " лв. с ДДС";
-    var color = document.querySelector('.color-selected img').src;
+    var res = ((((widthVal.value * heightVal.value) * 0.0055816) * qty.value) * 1.2).toFixed(2) + " лв. с ДДС";
+    var checkedValue = document.querySelector('.myCheckbox:checked').value;
+    var color = document.querySelector('.color-selected img');
     result.textContent = res;
     modal.style.display = "block";
     modalBody.innerHTML = `<div class="row">
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">брой щори: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${1}</div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align center">цвят: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align"><img src="${color}" alt="/"></div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">размер: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
-                             <div class="col-xs-3 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>
-                             <div class="col-xs-12 col-sm-12 col-md-12 top-margin-small">
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">брой щори: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${qty.value}</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align center">цвят: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align"><p>${color.parentNode.title}</p><img src="${color.src}" alt="${color.getAttribute('alt')}"></div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">размер: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">управление: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${checkedValue}</div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>
                               <button class="btn btn-primary btn-sm">добави в количката</button>
                              </div>
                            </div>`;
@@ -36,6 +50,7 @@
       modal.style.display = "none";
   }
 
+  //when user clicks outside of modal box close it
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";

@@ -2710,6 +2710,11 @@ div.b-item-card-mod:hover .b-card-buttons {
   margin-bottom: 17px;
 }
 
+.product-info .qty {
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
 .tab-devider {
     display: block;
     height: 1px;
@@ -2842,7 +2847,7 @@ div.b-item-card-mod:hover .b-card-buttons {
 
 .advantages-plise {
     padding-left: 15px;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .top-margin-small {
