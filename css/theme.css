@@ -127,6 +127,11 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
+ul.color-picker li img {
+  width: 60px;
+  height: 54px;
+}
+    
 .b-top-line {
   background: #222222;
   padding: 33px 0 42px;

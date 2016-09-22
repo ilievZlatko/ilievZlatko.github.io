@@ -69,6 +69,10 @@
   font-size: 14px;
 }
 
+.modal-body img {
+  height: 150px;
+}
+
 .modal-body .row {
   text-align: center;
 }
