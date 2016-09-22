@@ -442,7 +442,7 @@
     result.textContent = res;
     modal.style.display = "block";
     modalBody.innerHTML = `<div class="row">
-                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">брой щори: </div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">количество: </div>
                               <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align">${qty.value}</div>
                               <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align center">цвят: </div>
                               <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align"><p>${color.parentNode.title}</p><img src="${color.src}" alt="${color.getAttribute('alt')}"></div>
