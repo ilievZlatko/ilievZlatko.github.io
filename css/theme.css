@@ -66,19 +66,13 @@ hr {
 
 
 .btn {
-  -moz-transition: background ease 0.5s;
-  -o-transition: background ease 0.5s;
   -webkit-transition: background ease 0.5s;
-  -ms-transition: background ease 0.5s;
   transition: background ease 0.5s;
 }
 
 a {
   color: inherit;
-  -moz-transition: color ease 0.5s;
-  -o-transition: color ease 0.5s;
   -webkit-transition: color ease 0.5s;
-  -ms-transition: color ease 0.5s;
   transition: color ease 0.5s;
 }
 a:hover, a:focus {
@@ -131,7 +125,7 @@ ul.color-picker li img {
   width: 60px;
   height: 54px;
 }
-    
+
 .b-top-line {
   background: #222222;
   padding: 33px 0 42px;
@@ -325,10 +319,7 @@ form.login .input-result, form.register .input-result {
 .search-wrapper a {
   display: inline-block;
   vertical-align: 5px;
-  -moz-transition: all ease-in-out 0.5s;
-  -o-transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
-  -ms-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
 .search-wrapper a:hover {
@@ -352,10 +343,7 @@ form.login .input-result, form.register .input-result {
   color: #fff;
   border: 1px solid #e5e5e5;
   opacity: 0;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 #search.open-search input {
@@ -370,18 +358,12 @@ form.login .input-result, form.register .input-result {
 .nav-wrapper {
   padding: 27px 10px;
   background: #fff;
-  -moz-transition: top 0.5s ease-in-out;
-  -o-transition: top 0.5s ease-in-out;
   -webkit-transition: top 0.5s ease-in-out;
-  -ms-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
 }
 .nav-wrapper.nav-mobile {
   display: block !important;
-  -moz-transition: top 0.5s ease-in-out;
-  -o-transition: top 0.5s ease-in-out;
   -webkit-transition: top 0.5s ease-in-out;
-  -ms-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
 }
 
@@ -410,8 +392,6 @@ form.login .input-result, form.register .input-result {
   border: 1px solid #ccc;
   border-top: none;
   border-left: none;
-  -webkit-box-shadow: 0px 0px 7px 0px #c1c1c1;
-  -moz-box-shadow: 0px 0px 7px 0px #c1c1c1;
   box-shadow: 0px 0px 7px 0px #c1c1c1;
   display: block;
   height: 0;
@@ -420,10 +400,7 @@ form.login .input-result, form.register .input-result {
   opacity: 0;
   border-radius: 0;
   text-align: center;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .b-header-menu ul li .dropdown-menu li {
@@ -509,10 +486,7 @@ form.login .input-result, form.register .input-result {
   right: -8px;
   top: 50%;
   margin-top: -16px;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .btn-primary-arrow .arrow_right, .btn-secondary-arrow .arrow_right, .btn-default-arrow .arrow_right {
@@ -522,10 +496,7 @@ form.login .input-result, form.register .input-result {
   right: -29px;
   top: 50%;
   margin-top: -14px;
-  -moz-transition: right 0.3s ease-in-out;
-  -o-transition: right 0.3s ease-in-out;
   -webkit-transition: right 0.3s ease-in-out;
-  -ms-transition: right 0.3s ease-in-out;
   transition: right 0.3s ease-in-out;
   z-index: 2;
 }
@@ -536,10 +507,7 @@ form.login .input-result, form.register .input-result {
   left: -29px;
   top: 50%;
   margin-top: -14px;
-  -moz-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
   -webkit-transition: left 0.3s ease-in-out;
-  -ms-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
   z-index: 2;
 }
@@ -592,10 +560,7 @@ form.login .input-result, form.register .input-result {
   margin-right: 10px;
   background: none;
   padding: 0 7px 0 0;
-  -moz-transition: opacity ease-in-out 0.5s;
-  -o-transition: opacity ease-in-out 0.5s;
   -webkit-transition: opacity ease-in-out 0.5s;
-  -ms-transition: opacity ease-in-out 0.5s;
   transition: opacity ease-in-out 0.5s;
 }
 #cart:hover {
@@ -604,10 +569,7 @@ form.login .input-result, form.register .input-result {
 }
 #cart .ef {
   font-size: 21px;
-  -moz-transition: all ease-in-out 0.5s;
-  -o-transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
-  -ms-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
 .header .counter-wrapper {
@@ -632,20 +594,14 @@ form.login .input-result, form.register .input-result {
 
 .iconSearch .ef {
   font-size: 18px;
-  -moz-transition: all ease-in-out 0.5s;
-  -o-transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
-  -ms-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
 
 .btn-clear {
   border: none;
   background: none;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
   -webkit-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 .btn-clear .ef {
@@ -664,10 +620,7 @@ button[type="submit"] {
   font-size: 11px;
   border: none;
   background: none;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .btn-reply .ef {
@@ -710,10 +663,7 @@ button[type="submit"] {
 .solo-arrow {
   font-size: 30px;
   color: #666666;
-  -moz-transition: padding 0.3s ease-in-out;
-  -o-transition: padding 0.3s ease-in-out;
   -webkit-transition: padding 0.3s ease-in-out;
-  -ms-transition: padding 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out;
 }
 .solo-arrow:hover {
@@ -731,10 +681,7 @@ button[type="submit"] {
   height: 35px;
   text-align: center;
   padding: 0;
-  -moz-transition: border-color 0.3s ease;
-  -o-transition: border-color 0.3s ease;
   -webkit-transition: border-color 0.3s ease;
-  -ms-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 
@@ -839,8 +786,6 @@ button[type="submit"] {
   height: 108px;
   margin-right: 15px;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 7px 0px #c1c1c1;
-  -moz-box-shadow: 0px 0px 7px 0px #c1c1c1;
   box-shadow: 0px 0px 7px 0px #c1c1c1;
 }
 .ds-custom .ds-element:last-child {
@@ -917,10 +862,7 @@ button[type="submit"] {
 .pagination li a {
   font-size: 11px;
   color: #888888;
-  -moz-transition: background 0.5s ease;
-  -o-transition: background 0.5s ease;
   -webkit-transition: background 0.5s ease;
-  -ms-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
 .pagination li .empty:hover {
@@ -1015,11 +957,11 @@ button[type="submit"] {
   font-weight: 300;
   color: #afafaf;
   font-size: 22px;
-  -moz-transition: transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
   -webkit-transition: transform 0.5s ease;
-  -ms-transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .b-accordion .ui-accordion-header {
   padding: 18px 24px 13px 27px;
@@ -1036,7 +978,8 @@ button[type="submit"] {
 }
 .b-accordion .ui-accordion-header.ui-state-active .accordion-toogle .ef {
   color: #fff;
-  transform: rotate(90deg) scale(1) skew(1deg) translate(0px);
+  -webkit-transform: rotate(90deg) scale(1) skew(1deg) translate(0px);
+          transform: rotate(90deg) scale(1) skew(1deg) translate(0px);
 }
 .b-accordion .ui-accordion-content {
   background: #f7f7f7;
@@ -1463,10 +1406,7 @@ textarea {
   vertical-align: top;
   margin-right: 2px;
   margin-bottom: 10px;
-  -moz-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
   -webkit-transition: opacity 0.3s linear;
-  -ms-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
 }
 .b-instagram a:hover {
@@ -1741,10 +1681,7 @@ footer .b-logo p {
 .b-items-sort li {
   cursor: pointer;
   margin-right: 27px;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
   -webkit-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 .b-items-sort li:last-child {
@@ -2221,20 +2158,14 @@ div.b-item-card, div.b-item-card-mod {
   padding: 40px 0 32px;
   margin-bottom: 28px;
   min-height: 345px;
-  -moz-transition: outline-color 0.3s ease-in-out;
-  -o-transition: outline-color 0.3s ease-in-out;
   -webkit-transition: outline-color 0.3s ease-in-out;
-  -ms-transition: outline-color 0.3s ease-in-out;
   transition: outline-color 0.3s ease-in-out;
 }
 div.b-item-card a, div.b-item-card-mod a {
   display: block;
 }
 div.b-item-card img, div.b-item-card-mod img {
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 div.b-item-card .product-name, div.b-item-card-mod .product-name {
@@ -2254,10 +2185,7 @@ div.b-item-card:hover img, div.b-item-card-mod:hover img {
   left: 0;
   top: 50%;
   margin-top: -50px;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .b-card-buttons ul {
@@ -2278,10 +2206,7 @@ div.b-item-card:hover img, div.b-item-card-mod:hover img {
   background: #999999;
   color: #fff;
   font-size: 16px;
-  -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
   -webkit-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 
@@ -2297,10 +2222,7 @@ div.b-item-card-mod .product-image {
   position: relative;
   margin-bottom: 35px;
   padding: 20px 0;
-  -moz-transition: border-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out;
   -webkit-transition: border-color 0.3s ease-in-out;
-  -ms-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
 }
 div.b-item-card-mod:hover .b-card-buttons {
@@ -2460,10 +2382,7 @@ div.b-item-card-mod:hover .b-card-buttons {
 .ez-item .bx-wrapper .bx-pager.bx-default-pager a {
   background: transparent;
   border: 1px solid #999999;
-  -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
   -webkit-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 .ez-item .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -2526,14 +2445,9 @@ div.b-item-card-mod:hover .b-card-buttons {
   margin-top: 9px;
   border: 1px solid #f7f7f7;
   padding: 33px 26px 10px;
-  -webkit-box-shadow: 0px 0px 7px 0px #c1c1c1;
-  -moz-box-shadow: 0px 0px 7px 0px #c1c1c1;
   box-shadow: 0px 0px 7px 0px #c1c1c1;
   background: #fff;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .filter-block .accordion-block {
@@ -2547,14 +2461,15 @@ div.b-item-card-mod:hover .b-card-buttons {
   font-size: 10px;
 }
 .filter-block .accordion-block h3 i {
-  -moz-transition: transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
   -webkit-transition: transform 0.5s ease;
-  -ms-transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .filter-block .accordion-block h3.ui-state-active i {
-  transform: rotate(-90deg) scale(1) skew(1deg) translate(0px);
+  -webkit-transform: rotate(-90deg) scale(1) skew(1deg) translate(0px);
+          transform: rotate(-90deg) scale(1) skew(1deg) translate(0px);
 }
 .filter-block .accordion-block .accordion-toogle {
   float: right;
@@ -2607,8 +2522,6 @@ div.b-item-card-mod:hover .b-card-buttons {
 .b-filters .bootstrap-select .dropdown-menu {
   padding: 0;
   border-color: #cccccc;
-  -webkit-box-shadow: 0px 0px 7px 0px #c1c1c1;
-  -moz-box-shadow: 0px 0px 7px 0px #c1c1c1;
   box-shadow: 0px 0px 7px 0px #c1c1c1;
 }
 .b-filters .bootstrap-select .dropdown-menu > li > a {
@@ -2667,10 +2580,7 @@ div.b-item-card-mod:hover .b-card-buttons {
   height: 35px;
   color: #fff;
   font-size: 16px;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   -webkit-transition: opacity 0.3s ease;
-  -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 .b-product-socials ul a:hover {
@@ -2728,7 +2638,6 @@ div.b-item-card-mod:hover .b-card-buttons {
     padding: 0;
     position: relative;
     top: 40px;
-    background: #e24545;
 }
 
 .btn-primary.btn-active {
@@ -2743,10 +2652,7 @@ div.b-item-card-mod:hover .b-card-buttons {
   display: block;
   padding: 2px;
   border: 2px solid transparent;
-  -moz-transition: border-color 0.3s ease-in-out;
-  -o-transition: border-color 0.3s ease-in-out;
   -webkit-transition: border-color 0.3s ease-in-out;
-  -ms-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -3189,7 +3095,8 @@ div.b-item-card-mod:hover .b-card-buttons {
   margin-top: -6px;
   margin-right: 10px;
   font-size: 60px;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   margin-left: -13px;
 }
 .b-blockquote-fa-quote .quote-text {
@@ -3637,10 +3544,7 @@ p.legend-mod {
 }
 .lb-content .b-list li:before {
   top: -1px;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .lb-content .b-list li:hover:before {
