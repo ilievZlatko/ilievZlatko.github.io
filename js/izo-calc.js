@@ -22,22 +22,22 @@
   });
 
   calculate.addEventListener('click', function(){
-    var res = (((widthVal.value * heightVal.value) * 0.0055816) * 1.2).toFixed(2) + " лв. с ДДС";
+    var res = (((widthVal.value * heightVal.value) * 0.055816) * 1.2).toFixed(2) + " лв. с ДДС";
     var checkedValue = document.querySelector('.myCheckbox:checked').value;
-    var color = document.querySelector('.color-selected img').src;
+    var color = document.querySelector('.color-selected img');
     result.textContent = res;
     modal.style.display = "block";
     modalBody.innerHTML = `<div class="row">
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">брой щори: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${1}</div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align center">цвят: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align"><img src="${color}" alt="/"></div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">размер: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">управление: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${checkedValue}</div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>   
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">брой щори: </div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align">${1}</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align center">цвят: </div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align"><p>${color.parentNode.title}</p><img src="${color.src}" alt="${color.getAttribute('alt')}"></div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">размер: </div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align">${widthVal.value} x ${heightVal.value} см.</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">управление: </div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align">${checkedValue}</div>
+                              <div class="col-xs-4 col-sm-4 col-md-4 top-margin-small right-align">общо: </div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 top-margin-small left-align">${res}</div>
                               <button class="btn btn-primary btn-sm">добави в количката</button>
                              </div>
                            </div>`;
