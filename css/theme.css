@@ -1144,6 +1144,25 @@ textarea {
   text-align: center;
   line-height: 12px;
 }
+
+.invoice-details-holder {
+  display: none;
+}
+
+.invoice-details-holder label {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.invoice-details-holder .invoice-details {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  line-height: 12px;
+  vertical-align: top;
+  padding: 6px 22px;
+}
+
 .b-check-radio-holder .checkbox + .checkbox, .b-check-radio-holder .radio + .radio {
   margin-top: 0;
   margin-right: 20px;
