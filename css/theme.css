@@ -1008,6 +1008,10 @@ textarea {
   resize: none;
 }
 
+.registration-text {
+  font-family: 'Helvetica', sans-serif;
+}
+
 .fix-height > li {
   height: 300px;
 }
@@ -1042,6 +1046,11 @@ textarea {
 .b-form .form-group {
   margin-bottom: 38px;
 }
+
+.b-form .form-group .width {
+  width: 100%;
+}
+
 .b-form .b-form-description {
   margin: 33px 0 27px;
 }
