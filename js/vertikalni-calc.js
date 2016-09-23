@@ -22,7 +22,7 @@
   });
 
   calculate.addEventListener('click', function(){
-    var res = (((widthVal.value * heightVal.value) * 0.0055816) * 1.2).toFixed(2) + " лв. с ДДС";
+    var res = ((widthVal.value * heightVal.value) * 0.0055816).toFixed(2) + " лв. с ДДС";
     var checkedValue = document.querySelector('.myCheckbox:checked').value;
     var color = document.querySelector('.color-selected img').src;
     result.textContent = res;
@@ -37,7 +37,7 @@
                               <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">управление: </div>
                               <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${checkedValue}</div>
                               <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small right-align">общо: </div>
-                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>   
+                              <div class="col-xs-6 col-sm-6 col-md-6 top-margin-small left-align">${res}</div>
                               <button class="btn btn-primary btn-sm">добави в количката</button>
                              </div>
                            </div>`;

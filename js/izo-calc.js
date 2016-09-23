@@ -22,7 +22,7 @@
   });
 
   calculate.addEventListener('click', function(){
-    var res = (((widthVal.value * heightVal.value) * 0.055816) * 1.2).toFixed(2) + " лв. с ДДС";
+    var res = ((widthVal.value * heightVal.value) * 0.055816).toFixed(2) + " лв. с ДДС";
     var checkedValue = document.querySelector('.myCheckbox:checked').value;
     var color = document.querySelector('.color-selected img');
     result.textContent = res;

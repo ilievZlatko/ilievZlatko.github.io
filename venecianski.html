@@ -7,6 +7,7 @@
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<link href="css/master.css" rel="stylesheet">
 		<link href="css/modal.css" rel="stylesheet">
+		<link href="css/image-title.css" rel="stylesheet">
 
 		<!-- SWITCHER -->
 		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
@@ -372,6 +373,10 @@
 									<div class="b-color-size">
 										<div class="row">
 											<div class="col-xs-12 col-sm-12">
+												<hr class="tab-devider">
+												<a href="" class="btn btn-primary btn-sm btn-active" id="class1">клас 1</a>
+												<a href="" class="btn btn-primary btn-sm" id="class2">клас 2</a>
+												<a href="" class="btn btn-primary btn-sm" id="class3">клас 3</a>
 												<div class="b-color">
 													<span class="small-title">
 														цвят
@@ -551,7 +556,7 @@
 														</span>
 														<div class="b-quantity col-xs-6 col-sm-12 col-md-12 col-lg-12">
 															<div class="input-group spinner" data-trigger="spinner">
-																<input id="width" type="text" data-rule="quantity" required>
+																<input id="width" type="text" data-rule="number" data-min="30" data-max="300" required>
 																<div class="spinner-btn">
 																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
 																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
@@ -568,7 +573,7 @@
 														</span>
 														<div class="b-quantity col-xs-6 col-sm-12 col-md-12 col-lg-12">
 															<div class="input-group spinner" data-trigger="spinner">
-																<input id="height" type="text" data-rule="quantity" required>
+																<input id="height" type="text" data-rule="number" data-min="30" data-max="300" required>
 																<div class="spinner-btn">
 																	<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
 																	<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
@@ -596,6 +601,43 @@
 															</div>
 														</div>
 													</form>
+												</div>
+											</div>
+
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small wow fadeInUp">
+													<div class="b-check-radio-holder">
+														<form method="get" action="typography.html#">
+															<div class="form-group">
+																<span class="left-padding-zero col-xs-5 col-sm-12 col-md-12 col-lg-12 small-title width-title">
+																	допълнителни аксесоари:
+																</span>
+																<div class="checkbox checkbox-1">
+																	<input id="accessories" class="myAccessories" type="checkbox" value="ляво" name="check" checked>
+																	<label for="accessories">Стопери - 0.60лв./бр. щора</label>
+																</div>
+																<div class="checkbox checkbox-1">
+																	<input id="accessories2" class="myAccessories2" type="checkbox" value="ляво" name="check" checked>
+																	<label for="accessories2">Странично водене - 3.60лв./бр. щора</label>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 top-margin-small">
+													<span class="small-title qty">
+														Количество
+													</span>
+													<div class="b-quantity">
+														<div class="input-group spinner" data-trigger="spinner">
+															<input type="text" data-rule="quantity" value="1" id="qty">
+															<div class="spinner-btn">
+																<a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+																<a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 

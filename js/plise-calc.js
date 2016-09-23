@@ -436,7 +436,7 @@
 
   //add event listener when user selects color, detect color and create the modal box
   calculate.addEventListener('click', function(){
-    var res = ((((widthVal.value * heightVal.value) * 0.0055816) * qty.value) * 1.2).toFixed(2) + " лв. с ДДС";
+    var res = (((widthVal.value * heightVal.value) * 0.0055816) * qty.value).toFixed(2) + " лв. с ДДС";
     var checkedValue = document.querySelector('.myCheckbox:checked').value;
     var color = document.querySelector('.color-selected img');
     result.textContent = res;

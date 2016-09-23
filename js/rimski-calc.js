@@ -29,10 +29,10 @@
     var color = document.querySelector('.color-selected img');
 
     if(myAccessories) {
-      res = ((((widthVal.value * heightVal.value) * 0.055816) * qty.value + (5 * qty.value)) * 1.2).toFixed(2) + " лв. с ДДС";
+      res = (((widthVal.value * heightVal.value) * 0.055816) * qty.value + (5 * qty.value)).toFixed(2) + " лв. с ДДС";
       cord = 'да';
     } else {
-      res = ((((widthVal.value * heightVal.value) * 0.055816) * qty.value) * 1.2).toFixed(2) + " лв. с ДДС";
+      res = (((widthVal.value * heightVal.value) * 0.055816) * qty.value).toFixed(2) + " лв. с ДДС";
       cord = 'не';
     }
 
