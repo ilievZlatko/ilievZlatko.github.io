@@ -14,208 +14,188 @@
   var color = document.querySelector('.color-picker');
   var classContent = document.querySelectorAll('[id^=class]');
   var template1 = `<li class="color-selected">
-                      <a href="javascript:void(0);" title="9602">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-1.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бежов">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Игуазу 3">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-2.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Карамел">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Нило 2">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-3.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Крем">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-3.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Нило 3">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-4.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Лилаво">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-4.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Etamine Apricote прозрачо">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-5.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Мока">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-5.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Etamine Teracota прозрачо">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-6.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Небесно син">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-6.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Grey">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-7.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Патешко жълто">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-7.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Monet Blue">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-8.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Розово">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-8.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Monet Cherry">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-9.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Светло сиво">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-9.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Monet Cinder">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-10.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Снежно бяло">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-10.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Monet Dim Grey">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-11.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Monet Lavende">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-12.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Monet Violet">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-13.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Rain 4">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-14.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Rain 11">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-15.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Tema 4">
-                        <img src="media/product-detail/colors/fantasy_class1/fantasy-16.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Черен Въглен">
+                        <img src="media/product-detail/colors/den_nosht_class1/den-11.jpg" alt="/">
                       </a>
                     </li>`;
   var template2 = `<li class="color-selected">
-                      <a href="javascript:void(0);" title="Altamira Natural">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-1.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Бяло-1">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Bamboo Bright(BO)">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-2.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Вино">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="BBamboo Wallnut (BO)">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-3.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Виолет">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-3.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Boston Natural">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-4.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Зелено">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-4.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Clair Rose Wood">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-5.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Кобалт">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-5.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Clair White">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-6.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Лайм">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-6.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Dim out 4 (BO)">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-7.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Магента">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-7.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Linen 2">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-8.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Мед">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-8.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Linen 3">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-9.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Минт">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-9.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Linen 4">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-10.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Пастел">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-10.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Linen Special">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-11.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Сиво">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-11.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Link Rose">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-12.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо слонова кост">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-12.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Link Sand">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-13.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бамбо Шоколад">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-13.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Panama">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-14.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Медена дъга">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-14.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Pebbles Navy прозрачно">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-15.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Пясъчна дъга">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-15.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Pebbles Sand прозрачно">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-16.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Сива дъга">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-16.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Pebbles Wood прозрачно">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-17.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Rain 13(BO)">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-18.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="Simphony">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-19.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="T - 3002">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-20.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="T - 3002">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-21.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="T -3001">
-                        <img src="media/product-detail/colors/fantasy_class2/fantasy-22.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Шоколадова дъга">
+                        <img src="media/product-detail/colors/den_nosht_class2/den-17.jpg" alt="/">
                       </a>
                     </li>`;
   var template3 = `<li class="color-selected">
-                      <a href="javascript:void(0);" title="Bamboo Met(BO)">
-                        <img src="media/product-detail/colors/fantasy_class3/fantasy-1.jpg" alt="/">
+                      <a href="javascript:void(0);" title="А-02">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Bliss Gold">
-                        <img src="media/product-detail/colors/fantasy_class3/fantasy-2.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бриз бежово">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" title="Ecovision">
-                        <img src="media/product-detail/colors/fantasy_class3/fantasy-3.jpg" alt="/">
+                      <a href="javascript:void(0);" title="Бриз пепел от рози">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-3.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Бриз Сиво">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-4.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Бриз слонова кост">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-5.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Фин">
+                        <img src="media/product-detail/colors/den_nosht_class3/den-6.jpg" alt="/">
+                      </a>
+                    </li>`;
+  var template4 = `<li class="color-selected">
+                      <a href="javascript:void(0);" title="Горски дух (BO)">
+                        <img src="media/product-detail/colors/den_nosht_class4/den-1.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Светъл дъб (BO)">
+                        <img src="media/product-detail/colors/den_nosht_class4/den-2.jpg" alt="/">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Черен Ангел (BO)">
+                        <img src="media/product-detail/colors/den_nosht_class4/den-3.jpg" alt="/">
                       </a>
                     </li>`;
 
@@ -258,6 +238,11 @@
         break;
         case 3:
           color.innerHTML = template3;
+          $('.color-picker').fadeIn('fast');
+          selectColor();
+        break;
+        case 4:
+          color.innerHTML = template4;
           $('.color-picker').fadeIn('fast');
           selectColor();
         break;
