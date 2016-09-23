@@ -16,65 +16,16 @@
 	<body>
 
 
-
-
-		<!-- ========================== -->
-		<!-- FULL SCREEN MENU  -->
-		<!-- ========================== -->
-
-		<div class="wrap-fixed-menu" id="fixedMenu">
-			<div class="close-btn">&#10005;</div>
-			<div class="top-items">
-				<div href="blog.html" class="top-menu-item menu-item">
-					<span class="subtitle">влизане с профил</span>
-					<span class="title">вход</span>
-					<form action="" id="login-form" class="login">
-						<label for="username" class="top-margin-small">имейл:</label>
-						<input type="text" id="username" class="input-result">
-						<label for="password" class="top-margin-small">парола:</label>
-						<input type="password" id="password" class="input-result">
-						<input type="submit" value="влизане" class="btn btn-sm btn-primary top-margin-small">
-					</form>
-				</div>
-				<div href="portfolio.html" class="top-menu-item menu-item">
-					<span class="subtitle">регистрация на профил</span>
-					<span class="title">регистрация</span>
-					<form action="" id="register-form" class="register">
-						<label for="name" class="top-margin-small">име:</label>
-						<input type="text" id="name" class="input-result">
-						<label for="e-mail" class="top-margin-small">имейл:</label>
-						<input type="email" id="email" class="input-result">
-						<label for="password" class="top-margin-small">парола:</label>
-						<input type="password" id="password" class="input-result">
-						<label for="password" class="top-margin-small validate-password">повтори паролата:</label>
-						<input type="password" id="retype-password" class="input-result">
-						<input type="reset" value="изчистване" class="btn btn-sm btn-primary top-margin-small">
-						<input type="submit" value="регистрация" class="btn btn-sm btn-primary top-margin-small">
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<!-- ========================== -->
-		<!-- SEARCH MODAL  -->
-		<!-- ========================== -->
-
-		<div class="header-search open-search">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-						<div class="navbar-search">
-							<form class="search-global" _lpchecked="1">
-								<input type="text" placeholder="Type to search" autocomplete="off" name="s" value="" class="search-global__input">
-								<button class="search-global__btn"><i class="icon fa fa-search"></i></button>
-								<div class="search-global__note">Begin typing your search above and press return to search.</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button type="button" class="search-close close"><i class="fa fa-times"></i></button>
-		</div>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.7";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 
 		<!-- ========================== -->
 		<!-- MOBILE MENU  -->
@@ -350,10 +301,10 @@
 										</button>
 										<!-- Mobile Trigger End-->
 									</li>
-									<li><button class="  js-toggle-screen    toggle-menu-button ">
-											<div class="toggle-menu-button-icon"> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
-										</button></li>
-									<li class="no-hover"><a href="#">call us 1.800.12345</a></li>
+									<li>
+
+									</li>
+									<li class="no-hover"><a href="#">(02) 955 43 18</a></li>
 								</ul>
 							</div>
 							<div class="col-md-5 text-center">
@@ -365,64 +316,43 @@
 									</button>
 								</div>
 							</div>
-							<div class="col-header-center-right">
-								<a class="btn_header_search" href="#"><span class="ef icon_search "></span></a>
 
-								<a href="#"><span class="ef icon_bag_alt "></span>
-									<div class="counter-wrapper"><span class="counter">4</span></div></a></div>
+							<div class="col-header-center-right">
+
+								<a href="shopping-cart.html">
+									<span class="ef icon_bag_alt "></span>
+									<div class="counter-wrapper">
+										<span class="counter">4</span>
+									</div>
+								</a>
+							</div>
 
 						</div>
 					</nav>
 					<div class="header-navibox-2">
 						<div class="container">
 
-
 							<ul class="yamm main-menu nav navbar-nav ">
-								<li class="dropdown">
-									<a class="heading-line dropdown-toggle" data-toggle="dropdown" href="home-1.html">HOME</a>
-									<ul class="dropdown-menu" style="display: none;">
-										<li>
-											<a href="home-1.html">Home-1</a>
-										</li>
-										<li>
-											<a href="home-2.html">Home-2</a>
-										</li>
-										<li>
-											<a href="home-3.html">Home-3</a>
-										</li>
-										<li>
-											<a href="home-4.html">Home-4</a>
-										</li>
-										<li>
-											<a href="home-5.html">Home-5</a>
-										</li>
-										<li>
-											<a href="home-6.html">Home-6</a>
-										</li>
-									</ul>
+								<li>
+									<a class="heading-line" href="index.html">начало</a>
 								</li>
 								<li>
-									<a class="heading-line" href="category-1.html">shop</a>
+									<a class="heading-line" href="shtori.html">щори</a>
 								</li>
 								<li>
-									<a class="heading-line" href="category-2.html">sale items</a>
+									<a class="heading-line" href="razmeri.html">вземане на размери</a>
 								</li>
 								<li>
-									<a class="heading-line" href="typography.html">about</a>
-								</li>
-								<li class="dropdown">
-									<a class="heading-line" data-toggle="dropdown" href="blog-main.html">blog</a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="blog-main.html">Blog Main</a>
-										</li>
-										<li>
-											<a href="blog-post.html">Blog Post</a>
-										</li>
-									</ul>
+									<a class="heading-line" href="montaj.html">монтаж</a>
 								</li>
 								<li>
-									<a class="heading-line" href="contact.html">Contact</a>
+									<a class="heading-line" href="typography.html">за нас</a>
+								</li>
+								<li>
+									<a class="heading-line" href="http://www.alexabg.com/">фирмен сайт</a>
+								</li>
+								<li>
+									<a class="heading-line" href="contact.html">контакти</a>
 								</li>
 							</ul>
 
@@ -441,7 +371,7 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-12">
 								<div class="heading checkout-heading text-center">
-									<h2><strong>Доставка и плащане</strong></h2>
+									<h2><strong>Вашата поръчка</strong></h2>
 								</div>
 								<div class="b-check-state wow fadeInUp">
 									<div class="check-position current-check">
@@ -466,7 +396,7 @@
 									<div class="check-arrow">
 										<span class="ef arrow_right"></span>
 									</div>
-									<div class="check-position">
+									<div class="check-position current-check">
 										<p class="check-icon">
 											<span class="ef icon_archive_alt "></span>
 										</p>
@@ -482,68 +412,7 @@
 				<div class="b-billing-order">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 col-sm-6 wow fadeInLeft">
-								<div class="b-billing">
-									<p class="legend-mod">Информация за доставка</p>
-									<p>Имате регистрация?
-										<a href="checkout-billing.html#">Вход</a>
-										<a class="btn_header" href="#">
-											<span class="ef icon_profile js-toggle-screen toggle-menu-button">
-												<span class="registration-text">Регистрация</span>
-											</span>
-										</a>
-									</p>
-									<p>Продължете с поръчката като гост</p>
-									<form id="billing-form" class="b-form" method="get" action="checkout-billing.html#">
-										<div class="form-group">
-											<div class="row">
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="Име  /  Фамилия *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="Адрес (улица, блок, квартал, номер)*">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="Град *">
-												</div>
-												<div class="col-xs-12 col-sm-6">
-													<input type="text" class="form-control" placeholder="Област *">
-												</div>
-												<div class="col-xs-12 col-sm-6">
-													<input type="text" class="form-control" placeholder="Пощенски код *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="email *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="парола *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="потвърди паролата *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="телефон *">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<input type="text" class="form-control" placeholder="Име на фирма">
-												</div>
-												<div class="col-xs-12 col-sm-12">
-													<div class="b-check-radio-holder">
-														<div class="checkbox checkbox-1">
-															<input id="check1" type="checkbox" value="check1" name="check">
-															<label for="check1">Желая фактура</label>
-														</div>
-													</div>
-												</div>
-												<div class="col-xs-12 col-sm-12 top-margin-small invoice-details-holder">
-													<label for="invoice">Моля въведете данни за фактура:</label><br>
-													<textarea name="text" cols="40" rows="15" id="invoice" class="invoice-details"></textarea>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
+							<div class="col-xs-12 col-sm-3 wow fadeInRight"></div>
 							<div class="col-xs-12 col-sm-6 wow fadeInRight">
 								<div class="b-order-payment">
 									<p class="legend-mod">Вашата поръчка</p>
@@ -584,64 +453,13 @@
 												</div>
 											</li>
 										</ul>
-									</div>
-									<p class="legend-mod">Начин на плащане</p>
-									<div class="b-payment">
-										<form method="get" action="checkout-billing.html#">
-											<div class="form-group">
-												<div class="b-check-radio-holder">
-													<div class="checkbox checkbox-1">
-														<input id="check-bank" class="check" type="checkbox" value="check1" name="check">
-														<label for="check-bank">Банков превод</label>
-													</div>
-													<div class="checkbox checkbox-1">
-														<div class="b-check-card">
-															<input id="check-card" class="check" type="checkbox" checked value="check1" name="check">
-															<label for="check-card">Кредитна  /  Дебитна карта</label>
-														</div>
-														<div class="b-payments">
-															<ul class="list-unstyled">
-																<li>
-																	<img src="media/paycards/1.jpg" class="img-responsive" alt="/">
-																</li>
-																<li><img src="media/paycards/2.jpg" class="img-responsive" alt="/"></li>
-																<li><img src="media/paycards/3.jpg" class="img-responsive" alt="/"></li>
-																<li><img src="media/paycards/4.jpg" class="img-responsive" alt="/"></li>
-															</ul>
-														</div>
-													</div>
-													<div class="checkbox checkbox-1">
-													<div class="b-check-card">
-														<input id="check-paypal" class="check" type="checkbox" value="check1" name="check">
-														<label for="check-paypal">Наложен платеж</label>
-													</div>
-													<div class="b-payments">
-														<ul class="list-unstyled">
-															<li>
-																<img src="media/paycards/1.jpg" class="img-responsive" alt="/">
-															</li>
-														</ul>
-													</div>
-												</div>
-													<div class="checkbox checkbox-1">
-														<input id="check-money" class="check" type="checkbox" value="check1" name="check">
-														<label for="check-money">Плащане в нашите магазини и офиси</label>
-													</div>
-													<div class="checkbox checkbox-1">
-														<input id="check-cash" class="check" type="checkbox" value="check1" name="check">
-														<label for="check-cash">Плащане чрез наш монтажник</label>
-													</div>
-												</div>
-												<a href="poruchka.html" type="button" class="btn btn-secondary-arrow btn-sm-arrow">
-													Поръчай
-													<span class="ef icon_minus-06 "></span>
-													<span class="ef arrow_right"></span>
-												</a>
-											</div>
-										</form>
+										<button class="btn btn-primary btn-sm">
+											изтегли PDF
+										</button>
 									</div>
 								</div>
 							</div>
+							<div class="col-xs-12 col-sm-3 wow fadeInRight"></div>
 						</div>
 					</div>
 				</div>
@@ -653,11 +471,11 @@
 						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 center-block">
 							<div class="b-footer-subsc">
 								<div class="subsc-title text-center">
-									<h4 class="heading-bold-merri">Subscribe to Newsletter</h4>
-									<p>Subscribe to mailing list & get latest products arrrivals, discounts & special offers!</p>
+									<h4 class="heading-bold-merri">ЗАПИШЕТЕ СЕ ЗА НАШИЯ БЮЛЕТИН</h4>
+									<p>ВЪВЕДЕТЕ СВОЯ E-MAIL АДРЕС АКО ЖЕЛАЕТЕ ДА ПОЛУЧАВАТЕ ИНФОРМАЦИЯ ОТ НАС</p>
 								</div>
 								<div class="subsc-mail">
-									<form id="comment-reply-form" class="b-form" method="get" action="checkout-billing.html#">
+									<form id="comment-reply-form" class="b-form" method="get" action="index.html#">
 										<div class="form-group">
 											<div class="clearfix">
 												<div class="col-xs-12 col-sm-6 col-sm-offset-2">
@@ -665,7 +483,7 @@
 												</div>
 												<div class="col-xs-12 col-sm-4">
 													<button type="submit" class="btn btn-primary-arrow btn-sm-arrow">
-														subscribe
+														запиши се
 														<span class="ef icon_minus-06 "></span>
 														<span class="ef arrow_right"></span>
 													</button>
@@ -682,47 +500,33 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="footer-menu-item wow fadeInLeft">
-								<h6>Quick links</h6>
+								<h6>Бързи линкове</h6>
 								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">Living & Dinning</a></li>
-									<li><a href="javascript:void(0);">Bedroom Accessories</a></li>
-									<li><a href="javascript:void(0);">Fresh Catalog</a></li>
-									<li><a href="javascript:void(0);">Track Shipment</a></li>
-									<li><a href="javascript:void(0);">Customer Service</a></li>
-									<li><a href="javascript:void(0);">FAQ’s</a></li>
-									<li><a href="javascript:void(0);">Returns & exchanges</a></li>
-								</ul>
-								<ul class="list-unstyled">
-									<li><a href="javascript:void(0);">My Orders</a></li>
-									<li><a href="javascript:void(0);">Delivery Information</a></li>
-									<li><a href="javascript:void(0);">My Account</a></li>
-									<li><a href="javascript:void(0);">Login or Register</a></li>
-									<li><a href="javascript:void(0);">My Cart</a></li>
-									<li><a href="javascript:void(0);">Wishlist</a></li>
+									<li><a href="javascript:void(0);">Моят профил</a></li>
+									<li><a href="javascript:void(0);">Плащане</a></li>
+									<li><a href="javascript:void(0);">Монтаж</a></li>
+									<li><a href="javascript:void(0);">Общи условия</a></li>
+									<li><a href="javascript:void(0);">Доставка</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center wow fadeIn">
 							<div class="b-logo">
-								<a href="home-1.html">
-									<h5>sh<span>o</span>p<span>o</span>ne</h5>
-									<p>one shop solution for all needs</p>
+								<a href="index.html">
+									<img class="scroll-logo hidden-xs" src="images/logo.png" alt="logo">
 								</a>
 							</div>
 							<div class="b-footer-contacts">
 								<div class="footer-contacts-list">
 									<ul class="list-unstyled">
 										<li>
-											95 Queen Street, Newyork NY 36900
+											София, бул. "Овча купел" №72
 										</li>
 										<li>
-											(+01) 123 4567  -  0800 123 4567
+											Tел: +359 2 9554318 / Факс: +359 2 9554296
 										</li>
 										<li>
-											order (at) shopone.com
-										</li>
-										<li>
-											Monday to Saturday: 9:00 am - 7:00 pm
+											http://www.shtorionline.com/
 										</li>
 									</ul>
 								</div>
@@ -740,20 +544,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<div class="b-text text-right wow fadeInRight">
-								<h6>About us</h6>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									<br>
-									adipisicing elit sed do eiusmod tempor incididunt
-									<br>
-									ut labore et dolore magna aliqua. Ut enim ad
-									<br>
-									minim veniam quis nostrud exercitation ullamco
-									<br>
-									laboris nisi ut aliquip ex ea commodo consequat.
-									<br>
-									Duis aute irure dolor in reprehenderit.
-								</p>
+								<div class="fb-page" data-href="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-height="200px">
+									<blockquote cite="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf" class="fb-xfbml-parse-ignore">
+										<a href="https://www.facebook.com/Alexa-Stoilov-Co-234227547176/?hc_ref=SEARCH&fref=nf">Facebook</a>
+									</blockquote>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -765,19 +560,18 @@
 								<div class="clearfix">
 									<div class="b-copy pull-left">
 										<p>
-											© Copyright 2016 <a href="home-1.html">ShopONE.</a> All Rights Reserved.
+											© Copyright 2016 <a href="http://www.shtorionline.com" target="_blank">www.shtorionline.com</a> <a href="http://webimpression.net/" target="_blank">http://webimpression.net</a> All Rights Reserved.
 										</p>
 									</div>
 									<div class="b-payments pull-right">
 										<ul class="list-unstyled">
 											<li>
-												<img src="media/paycards/1.jpg" class="img-responsive" alt="/">
+												<img src="media/paycards/Maestro.png" class="img-responsive" alt="/">
 											</li>
-											<li><img src="media/paycards/2.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/3.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/4.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/5.jpg" class="img-responsive" alt="/"></li>
-											<li><img src="media/paycards/6.jpg" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/mastercard.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/visa.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/speedy.png" class="img-responsive" alt="/"></li>
+											<li><img src="media/paycards/econt.png" class="img-responsive" alt="/"></li>
 										</ul>
 									</div>
 								</div>
