@@ -15,207 +15,207 @@
   var classContent = document.querySelectorAll('[id^=class]');
   var template1 = `<li class="color-selected">
                       <a href="javascript:void(0);" title="9602">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-1.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Игуазу 3">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-2.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Нило 2">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-3.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-3.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Нило 3">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-4.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-4.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Etamine Apricote прозрачо">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-5.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-5.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Etamine Teracota прозрачо">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-6.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-6.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Grey">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-7.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-7.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Blue">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-8.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Cherry">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-9.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-9.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Cinder">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-10.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-10.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Dim Grey">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-11.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-11.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Lavende">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-12.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-12.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Monet Violet">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-13.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-13.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Rain 4">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-14.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-14.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Rain 11">
-                        <img src="media/product-detail/colors/rolo_class1/rimski-15.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-15.jpg" alt="/">
                       </a>
                     </li>
                     <li>
-											<a href="javascript:void(0);" title="Tema 4">
-												<img src="media/product-detail/colors/rolo_class1/rimski-16.jpg" alt="/">
-											</a>
-										</li>`;
+                      <a href="javascript:void(0);" title="Tema 4">
+                        <img src="media/product-detail/colors/fantasy_class1/fantasy-16.jpg" alt="/">
+                      </a>
+                    </li>`;
   var template2 = `<li class="color-selected">
                       <a href="javascript:void(0);" title="Altamira Natural">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-1.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Bamboo Bright(BO)">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-2.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="BBamboo Wallnut (BO)">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-3.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-3.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Boston Natural">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-4.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-4.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Clair Rose Wood">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-5.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-5.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Clair White">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-6.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-6.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Dim out 4 (BO)">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-7.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-7.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Linen 2">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-8.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-8.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Linen 3">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-9.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-9.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Linen 4">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-10.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-10.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Linen Special">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-11.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-11.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Link Rose">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-12.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-12.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Link Sand">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-13.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-13.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Panama">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-14.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-14.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Pebbles Navy прозрачно">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-15.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-15.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Pebbles Sand прозрачно">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-16.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-16.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Pebbles Wood прозрачно">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-17.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-17.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Rain 13(BO)">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-18.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-18.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Simphony">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-19.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-19.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="T - 3002">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-20.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-20.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="T - 3002">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-21.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-21.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="T -3001">
-                        <img src="media/product-detail/colors/rolo_class2/rolo-22.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class2/fantasy-22.jpg" alt="/">
                       </a>
                     </li>`;
   var template3 = `<li class="color-selected">
                       <a href="javascript:void(0);" title="Bamboo Met(BO)">
-                        <img src="media/product-detail/colors/rolo_class3/rolo-1.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class3/fantasy-1.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Bliss Gold">
-                        <img src="media/product-detail/colors/rolo_class3/rolo-2.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class3/fantasy-2.jpg" alt="/">
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);" title="Ecovision">
-                        <img src="media/product-detail/colors/rolo_class3/rolo-3.jpg" alt="/">
+                        <img src="media/product-detail/colors/fantasy_class3/fantasy-3.jpg" alt="/">
                       </a>
                     </li>`;
 
