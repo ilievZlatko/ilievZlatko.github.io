@@ -71,6 +71,7 @@
 
 .modal-body img {
   height: 150px;
+  max-width: 150px;
 }
 
 .modal-body .row {
