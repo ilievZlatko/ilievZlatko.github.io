@@ -14,136 +14,6 @@
   var checkbox = document.querySelectorAll('.fixing');
   var color = document.querySelector('.color-picker');
   var classContent = document.querySelectorAll('[id^=class]');
-  var template1 = `<li class="color-selected">
-                      <a href="javascript:void(0);" title="1">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-1.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="35">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-2.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="44">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-3.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="58">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-4.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="91">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-5.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="408">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-6.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="570">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-7.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="700 металик">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-8.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="707">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-9.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="713 металик">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-10.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="714 металик">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-11.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="870">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-12.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="872">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-13.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="900">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-14.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="901">
-                        <img src="media/product-detail/colors/venecianski_16mm/venecianski-15.jpg" alt="/">
-                      </a>
-                    </li>`;
-  var template2 = `<li class="color-selected">
-                    <a href="javascript:void(0);" title="1 перфорирано">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-1.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="1">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-2.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="2">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-3.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="3">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-4.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="8">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-5.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="10">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-6.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="18">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-7.jpg" alt="/">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" title="35">
-                      <img src="media/product-detail/colors/venecianski_25mm/venecianski-8.jpg" alt="/">
-                    </a>
-                  </li>`;
-  var template3 = `<li class="color-selected">
-                      <a href="javascript:void(0);" title="1">
-                        <img src="media/product-detail/colors/venecianski_50mm/venecianski-1.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="58">
-                        <img src="media/product-detail/colors/venecianski_50mm/venecianski-2.jpg" alt="/">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" title="9312 металик">
-                        <img src="media/product-detail/colors/venecianski_50mm/venecianski-3.jpg" alt="/">
-                      </a>
-                    </li>`;
 
   function selectColor(options) {
     $(".color-picker a").on('click', function(e){
@@ -161,40 +31,20 @@
     });
   }
 
-  [].forEach.call(classContent, function(item) {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
-      RemoveClass();
-      $('.color-picker').fadeOut("fast");
-      this.classList.add('btn-active');
-      var idNum = this.id;
-      var arr = idNum.split('class')
-      var numb = parseInt(arr[arr.length - 1]);
-      color.innerHTML = '';
-      switch (numb) {
-        case 1:
-          color.innerHTML = template1;
-          $('.color-picker').fadeIn('fast');
-          selectColor();
-        break;
-        case 2:
-          color.innerHTML = template2;
-          $('.color-picker').fadeIn('fast');
-          selectColor();
-        break;
-        case 3:
-          color.innerHTML = template3;
-          $('.color-picker').fadeIn('fast');
-          selectColor();
-        break;
-        default:
-          color.innerHTML = template1;
-          $('.color-picker').fadeIn('fast');
-          selectColor();
-      }
+  $(document).ready(function() {
+    $(".tabLink").each(function(){
+      $(this).click(function(e){
+        e.preventDefault();
+        var tabeId = $(this).attr('id');
+        $(".tabLink").removeClass("btn-active");
+        $(this).addClass("btn-active");
+        $(".color-picker").addClass("hide").fadeOut("fast");
+        $("#"+tabeId+"-1").removeClass("hide").fadeIn("fast");
+        return false;
+      });
     });
   });
-
+  
   [].forEach.call(checkbox, function(checkboxClicked) {
     checkboxClicked.addEventListener('click', function() {
       [].forEach.call(checkbox, function(checkbox){
