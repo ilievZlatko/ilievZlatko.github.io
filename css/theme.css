@@ -62,7 +62,9 @@ hr {
   overflow: hidden;
 }
 
-
+.hide {
+  display: none;
+}
 
 
 .btn {
