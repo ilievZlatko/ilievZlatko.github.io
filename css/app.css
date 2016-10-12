@@ -83,11 +83,6 @@ body header .menu-circle {
 		transition: transform 0.25s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-body header .menu:hover .menu-circle {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-}
-
 body header .menu.open .menu-circle {
 		-webkit-transform: scale(40);
 		transform: scale(40);
