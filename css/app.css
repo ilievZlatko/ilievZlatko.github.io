@@ -84,8 +84,8 @@ body header .menu-circle {
 }
 
 body header .menu.open .menu-circle {
-		-webkit-transform: scale(40);
-		transform: scale(40);
+		-webkit-transform: scale(20);
+		transform: scale(20);
 }
 
 body header .menu.open .menu-line-2 {
