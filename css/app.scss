@@ -82,16 +82,16 @@ body {
               transform: scale(1);
       z-index: 1000;
       box-shadow: $shadow;
-      -webkit-transition: -webkit-transform 0.25s ease-in-out;
-      transition: -webkit-transform 0.25s ease-in-out;
-      transition: transform 0.25s ease-in-out;
-      transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+      -webkit-transition: -webkit-transform 0.1s ease-in;
+      transition: -webkit-transform 0.1s ease-in;
+      transition: transform 0.1s ease-in;
+      transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
     }
 
     .menu.open {
       .menu-circle {
-        -webkit-transform: scale(20);
-                transform: scale(20);
+        -webkit-transform: scale(40);
+                transform: scale(40);
       }
       .menu-line-2 {
         opacity: 0;
@@ -121,8 +121,8 @@ body {
       right: 0;
       bottom: 0;
       text-align: center;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
+      -webkit-transition: opacity 0.1s ease-in-out;
+      transition: opacity 0.1s ease-in-out;
       z-index: 1001;
       opacity: 0;
       visibility: hidden;
@@ -138,7 +138,7 @@ body {
       font-weight: 600;
       font-size: 32px;
       padding: 2%;
-      margin:  10% 1% 0;
+      margin:  17% 1% 0;
       display: block;
       &.active {
         color: $accent-color;
@@ -160,8 +160,8 @@ body {
     background: $background;
     margin-top: 100px;
     text-align: center;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     opacity: 1;
     visibility: visible;
 
