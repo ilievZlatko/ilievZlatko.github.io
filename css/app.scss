@@ -61,8 +61,8 @@ body {
       border-radius: 2px;
       position: absolute;
       left: 0;
-      -webkit-transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     .menu-line-2 {
@@ -83,10 +83,10 @@ body {
       -webkit-transform: scale(1);
               transform: scale(1);
       z-index: 1000;
-      -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: -webkit-transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: transform 0.1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: -webkit-transform 0.15s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 0.15s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 0.15s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.15s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     .menu.open {
