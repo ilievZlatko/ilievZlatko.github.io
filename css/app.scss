@@ -20,6 +20,7 @@ body {
     background: $accent-color;
     color: $white;
     box-shadow: $shadow;
+    z-index: 2005;
 
     .desktop-nav {
       display: none;
@@ -137,37 +138,45 @@ body {
       font-weight: 600;
       font-size: 32px;
       padding: 2%;
-      margin:  17% 1% 0;
+      margin:  8% 1% 0;
       display: block;
       &.active {
         color: $accent-color;
+      }
+      &:first-of-type {
+        margin-top: 17%;
       }
     }
 
     .name {
       text-align: right;
-      padding: 20px 0;
+      padding: 16px 0;
       box-sizing: border-box;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 26px;
     }
   }
 
-  /*----- main section styles -----*/
+
 
   main {
+    position: relative;
+    top: 68px;
     background: $background;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
     opacity: 1;
     visibility: visible;
+    z-index: 2000;
 
     &.show {
       opacity: 0;
       visibility: hidden;
     }
 
-    img {
+      /*----- main section styles about page -----*/
+
+    img.avatar {
       width: 100%;
       max-width: 150px;
       border-radius: 50%;
@@ -192,17 +201,17 @@ body {
       height: 4px;
       width: 120px;
       margin: 0 auto;
-      margin-top: 20px;
+      margin-top: 30px;
       background-color: $accent-color;
     }
-    p {
+    p.about-me {
       font-size: 16px;
-      margin-top: 20px;
+      margin-top: 30px;
       color: #878787;
     }
 
     button {
-      margin: 20px 0;
+      margin: 30px 0;
       padding: 10px;
       font-size: 14px;
       appearance: none;
@@ -213,6 +222,69 @@ body {
       background-color: #c25975;
       color: $white;
       box-shadow: $shadow;
+    }
+
+    /*----- main section styles Resume page -----*/
+
+    h2, h3 {
+      display: inline-block;
+      padding-bottom: 5px;
+      border-bottom: 2px solid $accent-color;
+    }
+    h2.resume {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .avatar-resume {
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+    }
+    .info-keys, .info-values {
+      padding: 0;
+      li {
+        font-size: 16px;
+        color: $headers-gray;
+      }
+    }
+    .info-keys {
+      text-align: right;
+      li {
+        font-weight: 600;
+      }
+    }
+    .info-values {
+      text-align: left;
+      li {
+        font-weight: 400;
+        a {
+          color: $headers-gray;
+        }
+      }
+    }
+
+    .skill {
+      font-weight: 600;
+    }
+    .description {
+      color: #707070;
+      &:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: #e7e7e7;
+      }
+      &:last-of-type:after {
+        display: none;
+      }
     }
   }
 }

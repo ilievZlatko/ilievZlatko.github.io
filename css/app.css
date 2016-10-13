@@ -1,7 +1,6 @@
 body {
 		background: #fbfbfb;
 		font-family: "Source Sans Pro", sans-serif;
-		/*----- main section styles -----*/
 }
 
 body header {
@@ -13,6 +12,7 @@ body header {
 		background: #53bbb4;
 		color: #fff;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+		z-index: 2005;
 }
 
 body header .desktop-nav {
@@ -131,7 +131,7 @@ body header .menu-overlay a {
 		font-weight: 600;
 		font-size: 32px;
 		padding: 2%;
-		margin: 17% 1% 0;
+		margin: 8% 1% 0;
 		display: block;
 }
 
@@ -139,20 +139,29 @@ body header .menu-overlay a.active {
 		color: #53bbb4;
 }
 
+body header .menu-overlay a:first-of-type {
+		margin-top: 17%;
+}
+
 body header .name {
 		text-align: right;
-		padding: 20px 0;
+		padding: 16px 0;
 		box-sizing: border-box;
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 26px;
 }
 
 body main {
+		position: relative;
+		top: 68px;
 		background: #fbfbfb;
-		margin-top: 100px;
+		margin-top: 40px;
 		text-align: center;
 		opacity: 1;
 		visibility: visible;
+		z-index: 2000;
+		/*----- main section styles about page -----*/
+		/*----- main section styles Resume page -----*/
 }
 
 body main.show {
@@ -160,7 +169,7 @@ body main.show {
 		visibility: hidden;
 }
 
-body main img {
+body main img.avatar {
 		width: 100%;
 		max-width: 150px;
 		border-radius: 50%;
@@ -187,18 +196,18 @@ body main span.devider {
 		height: 4px;
 		width: 120px;
 		margin: 0 auto;
-		margin-top: 20px;
+		margin-top: 30px;
 		background-color: #53bbb4;
 }
 
-body main p {
+body main p.about-me {
 		font-size: 16px;
-		margin-top: 20px;
+		margin-top: 30px;
 		color: #878787;
 }
 
 body main button {
-		margin: 20px 0;
+		margin: 30px 0;
 		padding: 10px;
 		font-size: 14px;
 		appearance: none;
@@ -209,4 +218,77 @@ body main button {
 		background-color: #c25975;
 		color: #fff;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body main h2, body main h3 {
+		display: inline-block;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #53bbb4;
+}
+
+body main h2.resume {
+		font-weight: bold;
+		margin-bottom: 30px;
+}
+
+body main .avatar-resume {
+		margin-bottom: 30px;
+}
+
+body main h3 {
+		font-weight: 600;
+}
+
+body main ul {
+		list-style: none;
+}
+
+body main .info-keys, body main .info-values {
+		padding: 0;
+}
+
+body main .info-keys li, body main .info-values li {
+		font-size: 16px;
+		color: #333333;
+}
+
+body main .info-keys {
+		text-align: right;
+}
+
+body main .info-keys li {
+		font-weight: 600;
+}
+
+body main .info-values {
+		text-align: left;
+}
+
+body main .info-values li {
+		font-weight: 400;
+}
+
+body main .info-values li a {
+		color: #333333;
+}
+
+body main .skill {
+		font-weight: 600;
+}
+
+body main .description {
+		color: #707070;
+}
+
+body main .description:after {
+		content: '';
+		display: block;
+		width: 100px;
+		height: 2px;
+		margin: 5px auto;
+		background-color: #e7e7e7;
+}
+
+body main .description:last-of-type:after {
+		display: none;
 }
