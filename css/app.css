@@ -197,12 +197,12 @@ body main span.devider {
 		width: 120px;
 		margin: 0 auto;
 		margin-top: 30px;
+		margin-bottom: 30px;
 		background-color: #53bbb4;
 }
 
 body main p.about-me {
 		font-size: 16px;
-		margin-top: 30px;
 		color: #878787;
 }
 
@@ -274,14 +274,25 @@ body main .info-values li a {
 
 body main .skill {
 		font-weight: 600;
+		word-wrap: break-word;
+		box-sizing: border-box;
+}
+
+body main .skill:after {
+		content: '';
+		display: block;
+		clear: both;
 }
 
 body main .description {
+		word-wrap: break-word;
+		box-sizing: border-box;
 		color: #707070;
 }
 
 body main .description:after {
 		content: '';
+		clear: both;
 		display: block;
 		width: 100px;
 		height: 2px;

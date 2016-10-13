@@ -202,11 +202,11 @@ body {
       width: 120px;
       margin: 0 auto;
       margin-top: 30px;
+      margin-bottom: 30px;
       background-color: $accent-color;
     }
     p.about-me {
       font-size: 16px;
-      margin-top: 30px;
       color: #878787;
     }
 
@@ -271,11 +271,21 @@ body {
 
     .skill {
       font-weight: 600;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
     }
     .description {
+      word-wrap: break-word;
+      box-sizing: border-box;
       color: #707070;
       &:after {
         content: '';
+        clear: both;
         display: block;
         width: 100px;
         height: 2px;
