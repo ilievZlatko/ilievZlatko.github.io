@@ -78,8 +78,8 @@ body header .menu-circle {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 		z-index: 1000;
-		-webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-		transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+		-webkit-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 }
 
 body header .menu.open .menu-circle {
