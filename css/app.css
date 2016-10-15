@@ -3,6 +3,18 @@
 		padding: 0;
 }
 
+.top-offset {
+		margin-top: 30px;
+}
+
+.auto-center {
+		margin: auto;
+}
+
+ul {
+		list-style: none;
+}
+
 body {
 		background: #fbfbfb;
 		font-family: "Source Sans Pro", sans-serif;
@@ -173,9 +185,8 @@ body header .name {
 
 body main {
 		position: relative;
-		top: 68px;
+		top: 70px;
 		background: #fbfbfb;
-		margin-top: 40px;
 		text-align: center;
 		opacity: 1;
 		visibility: visible;
@@ -208,8 +219,10 @@ body main h1 {
 body main span {
 		font-size: 18px;
 		font-weight: 500;
+}
+
+body main span.occupation {
 		color: #53bbb4;
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 body main span.devider {
@@ -223,7 +236,7 @@ body main span.devider {
 }
 
 body main p.about-me {
-		font-size: 16px;
+		font-size: 18px;
 		color: #878787;
 }
 
@@ -249,47 +262,48 @@ body main h2, body main h3 {
 
 body main h2.resume {
 		font-weight: bold;
-		margin-bottom: 30px;
-}
-
-body main .avatar-resume {
-		margin-bottom: 30px;
+		margin: 30px 0;
 }
 
 body main h3 {
 		font-weight: 600;
 }
 
-body main ul {
+body main ul.info {
 		list-style: none;
 }
 
-body main .info-keys, body main .info-values {
-		padding: 0;
+body main ul.info li {
+		padding: 2px 0;
+		box-sizing: border-box;
 }
 
-body main .info-keys li, body main .info-values li {
+body main ul.info li .key, body main ul.info li .value {
+		box-sizing: border-box;
+		padding: 0;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		width: 50%;
 		font-size: 16px;
 		color: #333333;
 }
 
-body main .info-keys {
+body main ul.info li .key {
+		padding-right: 10px;
 		text-align: right;
-}
-
-body main .info-keys li {
+		justify-content: flex-end;
 		font-weight: 600;
 }
 
-body main .info-values {
+body main ul.info li .value {
+		padding-left: 10px;
 		text-align: left;
-}
-
-body main .info-values li {
+		justify-content: flex-start;
 		font-weight: 400;
 }
 
-body main .info-values li a {
+body main ul.info li .value a {
 		color: #333333;
 }
 
@@ -330,9 +344,17 @@ body main .container {
 }
 
 body main ul.portfolio-holder {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
 		width: 100%;
 		padding: 0;
@@ -450,6 +472,8 @@ body main .bottom-part .tools-holder ul {
 
 body main .bottom-part .tools-holder ul li {
 		box-sizing: border-box;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
 		margin-left: 3px;
 }

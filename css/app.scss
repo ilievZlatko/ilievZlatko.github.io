@@ -13,6 +13,18 @@ $shadow: 0 2px 4px rgba(0,0,0,0.3);
   padding: 0;
 }
 
+.top-offset {
+  margin-top: 30px;
+}
+
+.auto-center {
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   background: $background;
   font-family: $font-stack;
@@ -181,9 +193,8 @@ body {
 
   main {
     position: relative;
-    top: 68px;
+    top: 70px;
     background: $background;
-    margin-top: 40px;
     text-align: center;
     opacity: 1;
     visibility: visible;
@@ -213,8 +224,9 @@ body {
     span {
       font-size: 18px;
       font-weight: 500;
+    }
+    span.occupation {
       color: $accent-color;
-      text-shadow: $shadow;
     }
     span.devider {
       display: block;
@@ -226,7 +238,7 @@ body {
       background-color: $accent-color;
     }
     p.about-me {
-      font-size: 16px;
+      font-size: 18px;
       color: #878787;
     }
 
@@ -253,41 +265,47 @@ body {
     }
     h2.resume {
       font-weight: bold;
-      margin-bottom: 30px;
-    }
-
-    .avatar-resume {
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
     h3 {
       font-weight: 600;
     }
 
-    ul {
+    ul.info {
       list-style: none;
-    }
-    .info-keys, .info-values {
-      padding: 0;
       li {
-        font-size: 16px;
-        color: $headers-gray;
-      }
-    }
-    .info-keys {
-      text-align: right;
-      li {
-        font-weight: 600;
-      }
-    }
-    .info-values {
-      text-align: left;
-      li {
-        font-weight: 400;
-        a {
+        padding: 2px 0;
+        box-sizing: border-box;
+        .key, .value {
+          box-sizing: border-box;
+          padding: 0;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          width: 50%;
+          font-size: 16px;
           color: $headers-gray;
+        }
+
+        .key {
+          padding-right: 10px;
+          text-align: right;
+          justify-content: flex-end;
+          font-weight: 600;
+        }
+        .value {
+          padding-left: 10px;
+          text-align: left;
+          justify-content: flex-start;
+          font-weight: 400;
+          a {
+            color: $headers-gray;
+          }
         }
       }
     }
+
+
 
     .skill {
       font-weight: 600;
@@ -322,10 +340,18 @@ body {
       margin: 0 auto;
     }
     ul.portfolio-holder {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       width: 100%;
       padding: 0;
       margin: 0 auto;
@@ -423,6 +449,8 @@ body {
           margin-left: 5px;
           li {
             box-sizing: border-box;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
             display: inline-flex;
             margin-left: 3px;
             span {
