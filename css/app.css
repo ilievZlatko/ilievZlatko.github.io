@@ -26,8 +26,8 @@ body header .desktop-nav {
 
 body header .menu {
 		position: absolute;
-		top: 13px;
-		left: 0px;
+		top: 24px;
+		left: 20px;
 		height: 40px;
 		width: 40px;
 		border-radius: 50%;
@@ -149,10 +149,10 @@ body header .menu-overlay a:first-of-type {
 
 body header .name {
 		text-align: right;
-		padding: 16px 0;
+		/* padding: 16px 0; */
 		box-sizing: border-box;
 		font-weight: bold;
-		font-size: 26px;
+		font-size: 18px;
 }
 
 body main {
