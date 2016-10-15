@@ -7,6 +7,10 @@
 		margin-top: 30px;
 }
 
+.bottom-offset {
+		margin-bottom: 30px;
+}
+
 .auto-center {
 		margin: auto;
 }
