@@ -203,6 +203,8 @@ body {
   main {
     position: relative;
     top: 70px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
     background: $background;
     text-align: center;
     opacity: 1;
