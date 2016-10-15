@@ -49,6 +49,11 @@ body {
     box-shadow: $shadow;
     z-index: 2005;
 
+    .container {
+      width: 100%;
+      max-width: 960px;
+    }
+
     h1 {
       padding: 15px 0;
       font-size: 32px;
