@@ -11,6 +11,9 @@ $shadow: 0 2px 4px rgba(0,0,0,0.3);
 body {
   background: $background;
   font-family: $font-stack;
+  a {
+    text-decoration: none;
+  }
   header {
     width: 100%;
     position: fixed;
@@ -297,7 +300,19 @@ body {
       }
     }
 
-    /*----- main section styles Resume page -----*/
+    /*----- main section styles Portfolio page -----*/
+    .container {
+      margin: 0 auto;
+    }
+    ul.portfolio-holder {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
 
     .card {
       display: inline-block;
@@ -384,11 +399,14 @@ body {
           display: inline-block;
         }
         ul {
+          margin: 0 auto;
+          box-sizing: border-box;
           display: inline-block;
           padding: 0;
           margin-left: 5px;
           li {
-            display: inline-block;
+            box-sizing: border-box;
+            display: inline-flex;
             margin-left: 3px;
             span {
               font-size: 12px;
