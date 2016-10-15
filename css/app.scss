@@ -8,12 +8,24 @@ $background: #fbfbfb;
 $white: #fff;
 $shadow: 0 2px 4px rgba(0,0,0,0.3);
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: $background;
   font-family: $font-stack;
   a {
     text-decoration: none;
   }
+
+  .container {
+    max-width: 960px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   header {
     width: 100%;
     position: fixed;
@@ -25,6 +37,11 @@ body {
     box-shadow: $shadow;
     z-index: 2005;
 
+    h1 {
+      padding: 15px 0;
+      font-size: 32px;
+    }
+
     .desktop-nav {
       display: none;
       visibility: hidden;
@@ -32,8 +49,8 @@ body {
 
     .menu {
       position: absolute;
-      top: 24px;
-      left: 20px;
+      top: 16px;
+      left: 30px;
       height: 40px;
       width: 40px;
       border-radius: 50%;
