@@ -21,6 +21,11 @@ $shadow: 0 2px 4px rgba(0,0,0,0.3);
   margin-bottom: 30px;
 }
 
+.padding-ten {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .auto-center {
   margin: auto;
 }
@@ -489,6 +494,53 @@ body {
 
     #map {
       height: 400px;
+    }
+    form {
+      width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .input-field, textarea {
+        display: inline-flex;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: $font-stack;
+        width: 100%;
+        font-size: 16px;
+        color: #9a9a9a;
+        outline: none;
+        background-color: $background;
+        border: 1px solid #c9c9c9;
+        &:focus {
+          border: 1px solid $accent-color;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: 400px;
+      }
+      
+      .form-button {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        color: $white;
+        border: none;
+        background-color: $accent-color;
+        outline: none;
+        border-radius: 3px;
+        box-shadow: $shadow;
+        display: inline-flex;
+        &:hover {
+          cursor: pointer;
+          background-color: darken($accent-color, 5%);
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+      }
     }
   }
 }
