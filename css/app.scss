@@ -66,6 +66,7 @@ body {
     h1 {
       padding: 15px 0;
       font-size: 32px;
+      padding-right: 20px;
     }
 
     .desktop-nav {
@@ -522,7 +523,7 @@ body {
         width: 100%;
         height: 400px;
       }
-      
+
       .form-button {
         justify-content: center;
         padding-top: 20px;
@@ -539,6 +540,47 @@ body {
           cursor: pointer;
           background-color: darken($accent-color, 5%);
           box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    header {
+      .name {
+        text-align: left;
+        display: inline-flex;
+        padding-left: 40px;
+        box-sizing: border-box;
+      }
+      .mobile-nav {
+        display: none;
+        visibility: hidden;
+      }
+      .desktop-nav {
+        text-align: right;
+        display: inline-flex;
+        visibility: visible;
+        height: 100%;
+        justify-content: flex-end;
+        padding-right: 40px;
+        box-sizing: border-box;
+        a {
+          display: inline-flex;
+          color: $white;
+          font-size: 20px;
+          font-weight: bold;
+          height: 100%;
+          padding: 22px 10px;
+          border-bottom: 2px solid $accent-color;
+          &:hover {
+            background-color: darken($accent-color, 5%);
+          }
+        }
+        a.active {
+          border-bottom: 2px solid $white;
         }
       }
     }

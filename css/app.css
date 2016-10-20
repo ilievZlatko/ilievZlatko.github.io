@@ -59,6 +59,7 @@ body header .container {
 body header h1 {
 		padding: 15px 0;
 		font-size: 32px;
+		padding-right: 20px;
 }
 
 body header .desktop-nav {
@@ -566,4 +567,41 @@ body main form .form-button:hover {
 		cursor: pointer;
 		background-color: #45afa8;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+		body header .name {
+				text-align: left;
+				display: inline-flex;
+				padding-left: 40px;
+				box-sizing: border-box;
+		}
+		body header .mobile-nav {
+				display: none;
+				visibility: hidden;
+		}
+		body header .desktop-nav {
+				text-align: right;
+				display: inline-flex;
+				visibility: visible;
+				height: 100%;
+				justify-content: flex-end;
+				padding-right: 40px;
+				box-sizing: border-box;
+		}
+		body header .desktop-nav a {
+				display: inline-flex;
+				color: #fff;
+				font-size: 20px;
+				font-weight: bold;
+				height: 100%;
+				padding: 22px 10px;
+				border-bottom: 2px solid #53bbb4;
+		}
+		body header .desktop-nav a:hover {
+				background-color: #45afa8;
+		}
+		body header .desktop-nav a.active {
+				border-bottom: 2px solid #fff;
+		}
 }
