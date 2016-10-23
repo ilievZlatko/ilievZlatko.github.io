@@ -516,7 +516,7 @@ body main .bottom-part .tools-holder ul li span {
 }
 
 body main #map {
-		height: 400px;
+		height: 250px;
 }
 
 body main form {
@@ -614,6 +614,6 @@ body main form .form-button:hover {
 				text-align: right;
 		}
 		body main #map {
-				height: 250px;
+				height: 400px;
 		}
 }
