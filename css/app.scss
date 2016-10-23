@@ -42,7 +42,7 @@ body {
   }
 
   .container {
-    max-width: 960px;
+    max-width: 1020px;
     width: 90%;
     margin: 0 auto;
   }
@@ -583,6 +583,12 @@ body {
           border-bottom: 2px solid $white;
         }
       }
+    }
+    .skill {
+      text-align: right;
+    }
+    .description {
+      text-align: left;
     }
   }
 }

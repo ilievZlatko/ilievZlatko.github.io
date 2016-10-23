@@ -34,7 +34,7 @@ body a {
 }
 
 body .container {
-		max-width: 960px;
+		max-width: 1020px;
 		width: 90%;
 		margin: 0 auto;
 }
@@ -603,5 +603,11 @@ body main form .form-button:hover {
 		}
 		body header .desktop-nav a.active {
 				border-bottom: 2px solid #fff;
+		}
+		body .skill {
+				text-align: right;
+		}
+		body .description {
+				text-align: left;
 		}
 }
