@@ -546,7 +546,7 @@ body main form .input-field:focus, body main form textarea:focus {
 
 body main form textarea {
 		width: 100%;
-		height: 400px;
+		height: 250px;
 }
 
 body main form .form-button {
@@ -612,8 +612,5 @@ body main form .form-button:hover {
 		}
 		body .avatar-holder {
 				text-align: right;
-		}
-		body main form textarea {
-				height: 200px;
 		}
 }
