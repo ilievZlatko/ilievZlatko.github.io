@@ -610,4 +610,7 @@ body main form .form-button:hover {
 		body .description {
 				text-align: left;
 		}
+		body .avatar-holder {
+				text-align: right;
+		}
 }
