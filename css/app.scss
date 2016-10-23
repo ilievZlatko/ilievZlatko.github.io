@@ -593,9 +593,12 @@ body {
     .avatar-holder {
       text-align: right;
     }
-
-    textarea {
-      height: 200px;
+    main {
+      form {
+        textarea {
+          height: 200px;
+        }
+      }
     }
   }
 }
