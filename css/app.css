@@ -613,7 +613,7 @@ body main form .form-button:hover {
 		body .avatar-holder {
 				text-align: right;
 		}
-		body #map {
+		body main #map {
 				height: 250px;
 		}
 }
