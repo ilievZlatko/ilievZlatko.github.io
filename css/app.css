@@ -613,7 +613,7 @@ body main form .form-button:hover {
 		body .avatar-holder {
 				text-align: right;
 		}
-		body textarea.message {
+		body form textarea.message {
 				height: 200px;
 		}
 }
