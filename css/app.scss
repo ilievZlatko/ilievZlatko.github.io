@@ -593,7 +593,8 @@ body {
     .avatar-holder {
       text-align: right;
     }
-    main form textarea.message {
+
+    textarea#message {
       height: 200px;
     }
   }
